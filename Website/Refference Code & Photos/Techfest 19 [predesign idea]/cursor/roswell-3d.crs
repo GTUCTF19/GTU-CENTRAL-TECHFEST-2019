@@ -1,0 +1,45 @@
+﻿[UpArrow]
+Path=Roswell Alternate Select.ani
+
+[Wait]
+Path=Roswell Busy.ani
+
+[No]
+Path=Roswell Unavailable.ani
+
+[SizeNWSE]
+Path=Roswell Diagonal Resize 1.ani
+
+[SizeNESW]
+Path=Roswell Diagonal Resize 2.ani
+
+[NWPen]
+Path=Roswell Handwriting.ani
+
+[Help]
+Path=Roswell Help Select.ani
+
+[SizeWE]
+Path=Roswell Horizontal Resize.ani
+
+[Hand]
+Path=Roswell Link Select.ani
+
+[SizeAll]
+Path=Roswell Move.ani
+
+[Arrow]
+Path=Roswell Normal Select.ani
+
+[Crosshair]
+Path=Roswell Precision Select.ani
+
+[IBeam]
+Path=Roswell Text Select.ani
+
+[SizeNS]
+Path=Roswell Vertical Resize.ani
+
+[AppStarting]
+Path=Roswell Working in Background.ani
+

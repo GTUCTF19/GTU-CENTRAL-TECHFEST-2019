@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/new.css">
+  <link rel="stylesheet" href="css/fontawesome.css" >
+  <style type="text/css">
+  html{
+    cursor:url(cursor/select.cur),auto;
+    height: 100vh;
+    overflow: hidden;
+  }
+    #particles-js {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  top:0;
+  left: 0;
+  background-color: #101D3F;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/fav.jpg");
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  position: fixed;
+  z-index: 50;
+}
+.hidden{
+  display: none;
+}
+/*#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: 1000;
+  overflow: hidden;
+}*/
+.blink-text span{
+
+  padding-left: 2vw;  
+}
+section{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  margin:0;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%,-50%);
+  align-items: center;
+}
+.logo img{
+  width: auto;
+  height:40%;
+}
+.pen,.nova{
+  z-index: 60;
+}
+.bottom-smoke{
+  z-index: 70;
+}
+.homepage-footer{
+  z-index: 60;
+}
+</style>
+</head>
+<body>
+  
+  <div id="particles-js"></div>
+
+  <div class="logo-container"><img src="img/header.png" alt="header-logo" class="background-logo">
+    <div class="blinking"><p class="blink-text"><span>Home</span><span>Events</span></p>
+    </div>
+  </div>
+
+  <section class="logo">
+    <h4 class="gtu"><i>GTU Central TechFest'18</i></h4>
+    <div class="hero">
+      <p class="sub-title" style="color: #bebed3;"><b>
+           Hosted by Vishwakarma Government Engineering College
+      </b></p>
+    </div>        
+  </section>
+
+  <div class="relative" style="display: none;">
+    <img src="img/web logo part 2.png" alt="bottom-smoke" class="bottom-smoke pen"> 
+    <img src="img/portal.png" alt="portal" class="portal pen"> 
+    
+    
+  </div>
+
+  <div class="homepage-footer">
+    <img src="img/footer.svg" alt="footer-background" class="footer-background"> 
+    <div class="d-flex justify-content-between">
+      <div class="left-footer d-flex justify-content-start">
+        <div class="nav-button">About</div> 
+        <div class="nav-button">Sponsors</div> 
+        <div class="nav-button">Media</div>
+      </div> 
+      <div class="center-footer d-flex justify-content-center ">
+        <p class="blink-text">20 D : 15 H : 56 M : 12 S</p>
+      </div> 
+      <div class="right-footer d-flex justify-content-end">
+        <div class="nav-button">Hospitality</div> 
+        <div class="nav-button">Legal</div> 
+        <div class="nav-button">Contact Us</div>
+      </div>
+    </div> 
+    <div class="bottom-line"></div> 
+    <div class="developer d-flex" style="margin-top: -1vw;">
+      <div data-v-8dbfae1a="">
+        &copy; GTU CENTRAL TECHFEST 2019, VISHWAKARMA GOVERNMENT ENGINEERING COLLEGE
+      </div> 
+      <div class="ml-auto">
+          Hosting partner : <img src="" alt="Bigrock" style="height: 3vw;">
+      </div>
+    </div>
+  </div>
+
+<script src="js/particals.js"></script>
+<script type="text/javascript">
+  /* ---- particles.js config ---- */
+
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 20,
+      "density": {
+        "enable": true,
+        "value_area": 100
+      }
+    },
+    "color": {
+      "value": "#4BD4CA"
+    },
+    "shape": {
+      "type": ["star"],
+      "stroke": {
+        "width": 0,
+        "color": "#4BD4CA"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      // "image": {
+      //   "src": "img/treeicon.png",
+      //   "width": 1000,
+      //   "height": 500
+      // }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#4BD4CA",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+</script>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery scrollify.js"></script>
+<script>
+        $(function() {
+          $.scrollify({
+            section : "section",
+          });
+        });
+      </script>
+<script type='text/javascript'>
+    
+  // $( document ).ready(function() {
+
+  //   var video = $("#myVideo");
+  //   var img = $("#defimg");
+    
+  //   video.on('ended',function(){
+  //     video.addClass("hidden");
+  //     img.addClass("hidden");
+  //   });
+
+  //   video.mouseout(function(e){
+  //     video[0].pause();
+  //     video.addClass("hidden");
+  //     img.removeClass("hidden");
+
+  //   });
+  //   video.mouseenter(function(e){
+  //     img.addClass("hidden");
+  //     video.removeClass("hidden");
+  //     video[0].play();
+
+  //   });
+  // });
+    
+</script>
+</body>
+</html>

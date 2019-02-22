@@ -1,0 +1,29 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2201.66 318.67">
+	<defs>
+		<style>.cls-1{fill:none;}.cls-2{opacity:0.69;}.cls-3{clip-path:url(#clip-path);}.cls-4,.cls-6{opacity:0.8;}.cls-4{fill:url(#radial-gradient);}.cls-5{clip-path:url(#clip-path-2);}.cls-6{fill:url(#radial-gradient-2);}</style>
+		<clipPath id="clip-path">
+			<path class="cls-1" d="M774.57,271.1s512.14-8,633.82-8,94.31-47,216-47h447.51v77.76H766.23Z"/>
+		</clipPath>
+		<radialGradient id="radial-gradient" cx="92.27" cy="-325.69" r="375.63" gradientTransform="matrix(-1.35, 0.04, -0.01, -0.4, 1606.26, 19.89)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4BD4CA" stop-opacity="1"/><stop offset="0.26" stop-color="#4BD4CA" stop-opacity="0.8"/><stop offset="0.59" stop-color="#4BD4CA" stop-opacity="0."/><stop offset="0.84" stop-color="#4BD4CA" stop-opacity="0.4"/><stop offset="0.96" stop-color="#4BD4CA" stop-opacity="0.2"/></radialGradient>
+		<clipPath id="clip-path-2">
+			<path class="cls-1" d="M1421.29,271.1s-512.15-8-633.82-8-94.31-47-216-47H151.89v77.76H1429.63Z"/>
+		</clipPath>
+		<radialGradient id="radial-gradient-2" cx="-385.06" cy="-333.04" r="375.63" gradientTransform="matrix(1.41, 0.04, 0.01, -0.4, 1291.31, 45.1)" xlink:href="#radial-gradient"/>
+	</defs>
+	<title>footer</title>
+	<g id="Layer_2" data-name="Layer 2">
+		<g id="Layer_1-2" data-name="Layer 1">
+			<g class="cls-2">
+				<g class="cls-3">
+					<path class="cls-4" d="M779.51,177.44l689.64-21.07c132.4-4,99.81-137.22,232.21-141.26L2196.09,0l5.57,266.29L773.2,309.93Z"/>
+				</g>
+			</g>
+			<g class="cls-2">
+				<g class="cls-5">
+					<path class="cls-6" d="M1482.65,186.17,763.6,164.36C625.56,160.18,659.39,27,521.35,22.84L5.52,7.2,0,273.5l1489.37,45.17Z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,139 @@
+/*! CSS Used from: https://techfest.org/asset/css/Get.css */
+*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box;}
+a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:hover{color:#0056b3;text-decoration:underline;}
+img{border-style:none;}
+img{vertical-align:middle;}
+.d-flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;}
+.justify-content-start{-webkit-box-pack:start!important;-ms-flex-pack:start!important;justify-content:flex-start!important;}
+.justify-content-end{-webkit-box-pack:end!important;-ms-flex-pack:end!important;justify-content:flex-end!important;}
+.justify-content-center{-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important;}
+.justify-content-between{-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important;}
+.ml-auto{margin-left:auto!important;}
+@media print{
+*,:after,:before{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+img{page-break-inside:avoid;}
+}
+*{-webkit-box-sizing:border-box;box-sizing:border-box;cursor:url("../cursor/select.cur"),auto;font-family:Roboto,sans-serif;font-weight:300;-webkit-transition:-webkit-filter .5s;transition:-webkit-filter .5s;transition:filter .5s;transition:filter .5s,-webkit-filter .5s;}
+::-webkit-scrollbar{display:none;width:0;}
+.nav-button{font-family:Play,sans-serif!important;}
+.nav-button:hover{-webkit-animation-name:glitchshadow;animation-name:glitchshadow;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-duration:1s;animation-duration:1s;}
+img{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none;user-drag:none;}
+a{color:#fff!important;text-decoration:underline!important;}
+.footer-icon{font-size:1.5em;-webkit-transition:color 1s;transition:color 1s;}
+.footer-background{pointer-events:none;}
+.bottom-line{margin-top:2vw;margin-bottom:1vw;border-bottom:.1vw solid #fff;}
+.left-footer>*{margin-right:2vw;}
+.right-footer>*{margin-left:2vw;}
+.center-footer>*{margin-left:1vw;}
+.developer{text-align:center;}
+/*! CSS Used from: Embedded */
+*{box-sizing:border-box;cursor:url(../cursor/select.cur),auto;font-family:'Roboto', sans-serif;font-weight:300;transition:filter 500ms;}
+img{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none;user-drag:none;}
+a{color:white!important;;text-decoration:underline!important;}
+/*! CSS Used from: Embedded */
+.message-footer{padding-bottom:1vw;text-decoration:none;color:#fff!important;}
+.homepage-footer{position:fixed;bottom:-3vw;left:3vw;right:3vw;margin:auto;font-size:1.04vw;color:#fff;font-family:Roboto,sans-serif;-webkit-transition:bottom .3s;transition:bottom .3s;}
+.homepage-footer.active{bottom:0;}
+.homepage-footer .footer-background{width:140vw;position:absolute;bottom:.7vw;left:-200vw;right:-200vw;margin:auto;}
+.bottom-line{margin-top:2vw;margin-bottom:1vw;padding-top:1px;border:none!important;background:-webkit-gradient(linear,left top,right top,from(#000),color-stop(20%,#000),color-stop(35%,#fff),color-stop(50%,#fff),color-stop(65%,#fff),color-stop(72%,#e8e8e8),color-stop(80%,#000),to(#000));background:linear-gradient(90deg,#000 0,#000 20%,#fff 35%,#fff 50%,#fff 65%,#e8e8e8 72%,#000 80%,#000);}
+.left-footer>{margin-right:2vw;}
+.right-footer>{margin-left:2vw;}
+.center-footer>{margin-left:1vw;}
+.center-footer a{color:#fff!important;text-decoration:none!important;-webkit-transition:color 1s;transition:color 1s;}
+.center-footer a:hover{color:#aaa!important;}
+.developer{text-align:center;font-size:1em;}
+/*! CSS Used keyframes */
+@-webkit-keyframes glitchshadow{0%{text-shadow:10px 0 2px #fff;}5%{text-shadow:-9.5px 0 2px #fff;}10%{text-shadow:9px 0 2px #fff;}15%{text-shadow:-8.5px 0 2px #fff;}20%{text-shadow:8px 0 2px #fff;}25%{text-shadow:-7.5px 0 2px #fff;}30%{text-shadow:7px 0 2px #fff;}35%{text-shadow:-6.5px 0 2px #fff;}40%{text-shadow:6px 0 2px #fff;}45%{text-shadow:-5.5px 0 2px #fff;}50%{text-shadow:5px 0 2px #fff;}55%{text-shadow:-4.5px 0 2px #fff;}60%{text-shadow:4px 0 2px #fff;}65%{text-shadow:-3.5px 0 2px #fff;}70%{text-shadow:3px 0 2px #fff;}75%{text-shadow:-2.5px 0 2px #fff;}80%{text-shadow:2px 0 2px #fff;}85%{text-shadow:-1.5px 0 2px #fff;}90%{text-shadow:1px 0 2px #fff;}95%{text-shadow:-.5px 0 2px #fff;}to{text-shadow:0 0 2px #fff;}}
+@keyframes glitchshadow{0%{text-shadow:10px 0 2px #fff;}5%{text-shadow:-9.5px 0 2px #fff;}10%{text-shadow:9px 0 2px #fff;}15%{text-shadow:-8.5px 0 2px #fff;}20%{text-shadow:8px 0 2px #fff;}25%{text-shadow:-7.5px 0 2px #fff;}30%{text-shadow:7px 0 2px #fff;}35%{text-shadow:-6.5px 0 2px #fff;}40%{text-shadow:6px 0 2px #fff;}45%{text-shadow:-5.5px 0 2px #fff;}50%{text-shadow:5px 0 2px #fff;}55%{text-shadow:-4.5px 0 2px #fff;}60%{text-shadow:4px 0 2px #fff;}65%{text-shadow:-3.5px 0 2px #fff;}70%{text-shadow:3px 0 2px #fff;}75%{text-shadow:-2.5px 0 2px #fff;}80%{text-shadow:2px 0 2px #fff;}85%{text-shadow:-1.5px 0 2px #fff;}90%{text-shadow:1px 0 2px #fff;}95%{text-shadow:-.5px 0 2px #fff;}to{text-shadow:0 0 2px #fff;}}
+/*! CSS Used fontfaces */
+
+img{border-style:none;}
+img{vertical-align:middle;}
+@media print{
+*,:after,:before{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+img{page-break-inside:avoid;}
+}
+/*! CSS Used from: https://techfest.org/asset/css/Get.css */
+*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box;}
+p{margin-top:0;margin-bottom:1rem;}
+a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:hover{color:#0056b3;text-decoration:underline;}
+@media print{
+*,:after,:before{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+p{orphans:3;widows:3;}
+}
+
+a{color:#fff!important;text-decoration:underline!important;}
+a{color:white!important;;text-decoration:underline!important;}
+
+h1 {
+  font-weight: 100;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.6;
+  font-weight: 100;
+}
+/*! CSS Used from: https://techfest.org/asset/css/Get.css */
+*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box;}
+img{border-style:none;}
+img{vertical-align:middle;}
+@media print{
+*,:after,:before{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+img{page-break-inside:avoid;}
+}
+img{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none;user-drag:none;}
+.logo-container{position:fixed;top:2.84090909vh;left:1.76767677vw;width:18.1932865vw;height:3.4375vw;z-index:100;}
+.background-logo{position:fixed;top:2vw;left:1vw;width:41vw;height:auto;z-index:100;pointer-events:none;}
+/*! CSS Used from: Embedded */
+img{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none;user-drag:none;}
+/*! CSS Used fontfaces */
+@font-face{font-family:Roboto;src:url("//techfest.org/fonts/Roboto/roboto.woff") format("woff");}
+
+/*! CSS Used from: https://techfest.org/asset/css/Get.css */
+*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box;}
+p{margin-top:0;margin-bottom:1rem;}
+a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:hover{color:#0056b3;text-decoration:underline;}
+@media print{
+*,:after,:before{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+p{orphans:3;widows:3;}
+}
+a{color:#fff!important;text-decoration:underline!important;}
+/*! CSS Used from: Embedded */
+a{color:white!important;;text-decoration:underline!important;}
+.blinking{position:fixed;top:2.84091vh;left:20.76768vw;color:#fff;z-index:20;text-transform:capitalize;letter-spacing:2px;text-align:center;text-decoration:blink;}
+.blink-text{text-decoration:blink;-webkit-animation-name:blinker;-webkit-animation-duration:0.6s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:ease-in-out;-webkit-animation-direction:alternate;text-transform:capitalize;letter-spacing:2px;text-align:center;text-decoration:blink;}
+
+/*! CSS Used from: https://techfest.org/asset/css/Get.css */
+*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box;}
+img{border-style:none;}
+img{vertical-align:middle;}
+@media print{
+*,:after,:before{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+img{page-break-inside:avoid;}
+}
+*{-webkit-box-sizing:border-box;box-sizing:border-box;cursor:url(../cursor/select.cur),auto;font-family:Roboto,sans-serif;font-weight:300;-webkit-transition:-webkit-filter .5s;transition:-webkit-filter .5s;transition:filter .5s;transition:filter .5s,-webkit-filter .5s;}
+::-webkit-scrollbar{display:none;width:0;}
+.pointer{-webkit-transition:color 10ms;transition:color 10ms;position:relative;overflow:hidden;margin:inherit;}
+.pointer:before{content:"  ";background:hsla(0,0%,100%,.3);height:100%;width:100%;position:absolute;top:0;left:-100%;color:transparent;}
+.pointer:hover:before{-webkit-transition:left 1s;transition:left 1s;left:200%;}
+img{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none;user-drag:none;}
+main .fixed>.relative .homepage .relative{position:relative;min-height:100%;width:100%;}
+/*! CSS Used from: Embedded */
+*{box-sizing:border-box;cursor:url(../cursor/select.cur),auto;font-family:'Roboto', sans-serif;font-weight:300;transition:filter 500ms;}
+img{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none;user-drag:none;}
+/*! CSS Used from: Embedded */
+.portal{width:15vw;left:0;right:0;margin:auto;position:absolute;bottom:20vw;}
+.bottom-smoke{width:13vw;bottom:21vw;}
+.bottom-smoke,.middle-smoke{left:0;right:0;margin:auto;position:absolute;}
+.pen{pointer-events:none;}
+/*! CSS Used keyframes */
+.nova{position:absolute;bottom:5vw;left:0;right:0;margin:auto;height:13vw;}

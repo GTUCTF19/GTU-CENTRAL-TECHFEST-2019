@@ -1,0 +1,17 @@
+<body cz-shortcut-listen="true"><div role="banner" class="main-header js-header"><a href="http://www.brancottestate.com" target="_blank" class="js-site-title"><img src="/assets/images/logo.png" class="site-title"></a><div class="social"><a href="/" class="btn btn--social js-home"><img src="/assets/images/icon-home.png"></a><a href="https://twitter.com/intent/tweet?url=http://wineexplorer.brancottestate.com&amp;text=Wine Explorer by Brancott Estate" target="_blank" class="btn btn--social"><img src="/assets/images/icon-twitter.png"></a><a href="https://www.facebook.com/sharer/sharer.php?u=http://wineexplorer.brancottestate.com" target="_blank" class="btn btn--social"><img src="/assets/images/icon-facebook.png"></a><a href="mailto:?subject=Wine Explorer by Brancott Estate&amp;body=See it here: http://wineexplorer.brancottestate.com." class="btn btn--social"><img src="/assets/images/icon-email.png"></a></div></div><div role="main" class="main-content"><div class="preloadfont"><h1>Wine Explorer</h1><p>by Brancott Estate</p></div><canvas class="canvas js-canvas" width="967" height="948" style="cursor: inherit;"></canvas><div class="wine-detail js-detail-holder"></div><div class="start-screen js-start" style="display: none;"><canvas class="start-canvas" width="1536" height="759" style="top: 0px; left: -381px;"></canvas><div class="start-text"></div><button class="btn btn--primary start-button js-start">Start</button><a href="http://www.brancottestate.com" class="start-link">Or skip to go to our homepage</a></div></div><footer role="contentinfo" class="main-footer"><a href="/privacy-statement">Privacy Statement</a><a href="/terms-of-use">Terms of Use</a><p class="h4">Enjoy Brancott Estate ™ Wines Responsibly</p></footer><script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>if (typeof jQuery === 'undefined') document.write('<scr'+'ipt type="text/javascript" src="/assets/dist/lib/jquery-2.1.1.min.js"></sc'+'ript>')
+window.bypass_age = false
+window.bypass_country = 'MX'
+window.conf = { 'cdn_url': 'http://wine-explorer-production.s3-website-eu-west-1.amazonaws.com/' }</script><script src="/assets/dist/index.js"></script><script>var _country = 'MX'
+_country = (_country === 'GB') ? 'UK' : _country
+
+window.ageGateReady = function() {
+
+  var ageGate = new AgeGate($('body'),
+    { gatewayKey: "PWB-997FF5C",
+      iframePath: "/assets",
+      defaultCountry: _country || "NZ",
+      autoDetectCountry: true,
+      keyMarkets: ['US', 'AU', 'UK', 'NZ']
+    })
+
+}</script><script src="/assets/agegate/agegate.js"></script><iframe src="http://gateway.pernod-ricard-winemakers.com/agegate-cookie/uav-iframe?l=wineexplorer.brancottestate.com/assets" style="display: none;"></iframe></body>
