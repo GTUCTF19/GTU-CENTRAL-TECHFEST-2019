@@ -1,0 +1,20 @@
+<resources>
+    <!--App Strings-->
+    <string name="app_name">Techfest</string>
+
+    <!--Menu Strings-->
+    <string name="menu_user">User</string>
+
+    <!--Navigation Drawer Strings-->
+    <string name="nav_item_title">Title</string>
+    <string name="nav_drawer_home">Home</string>
+    <string name="nav_drawer_events">Events</string>
+    <string name="nav_drawer_about_us">About Us</string>
+    <string name="nav_drawer_contact_us">Contact Us</string>
+    <string name="nav_drawer_share">Share App</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!--Event Details Strings-->
+    <string name="event_register">Register</string>
+</resources>

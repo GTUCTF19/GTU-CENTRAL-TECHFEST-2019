@@ -1,0 +1,25 @@
+<resources>
+
+    <!--App Theme-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Toolbar Theme-->
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="ToolbarPopupTheme" parent="Theme.AppCompat.Light">
+        <item name="android:selectableItemBackground">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <!--Primary Ripple Theme-->
+    <style name="PrimaryRipple" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/primaryRipple</item>
+    </style>
+
+</resources>
