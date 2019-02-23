@@ -1,13 +1,16 @@
-// Get the video
-var video = document.getElementById("myVideo");
-
-// Pause and play the video, and change the button text
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
+(function() {
+$(".quotes").hide();
+    var quotes = $(".quotes");
+    var quoteIndex = -1;
+    
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(1000)
+            .delay(1000)
+            .fadeOut(1000, showNextQuote);
+    }
+    
+    showNextQuote();
+    
+})();
