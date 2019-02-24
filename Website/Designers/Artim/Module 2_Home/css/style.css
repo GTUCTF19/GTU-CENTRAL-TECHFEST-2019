@@ -15,6 +15,8 @@ text-align: center;
         max-height:100%;
         overflow:auto;
         z-index: 50;
+        overflow: hidden;
+
 }
 .outer {
   display: table;
@@ -201,7 +203,7 @@ canvas {
 }
 
 ul{
-		-webkit-animation: menu 8s infinite linear;
+		-webkit-animation: menu 12s infinite linear;
 }
 
 @-webkit-keyframes menu {
