@@ -199,3 +199,16 @@ canvas {
     -webkit-animation:move-clouds-back 200s linear infinite;
     animation:move-clouds-back 200s linear infinite;
 }
+
+ul{
+		-webkit-animation: menu 8s infinite linear;
+}
+
+@-webkit-keyframes menu {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
