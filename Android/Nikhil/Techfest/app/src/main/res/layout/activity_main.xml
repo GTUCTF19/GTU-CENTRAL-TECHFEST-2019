@@ -17,6 +17,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:tabMode="scrollable"
+                app:tabGravity="fill"
+                app:tabTextColor="@color/whiteRipple"
+                app:tabSelectedTextColor="@color/white"
+                app:tabIndicatorColor="@color/white"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_event"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
         <fragment
             android:id="@+id/navigation_drawer_fragment"
             android:name="com.nikhil.techfest.fragment.NavigationDrawerFragment"
@@ -27,8 +51,6 @@
             tools:layout="@layout/fragment_navigation_drawer" />
 
     </android.support.v4.widget.DrawerLayout>
-
-
 
 </LinearLayout>
 

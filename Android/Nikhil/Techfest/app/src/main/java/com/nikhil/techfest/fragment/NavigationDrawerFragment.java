@@ -1,5 +1,7 @@
 package com.nikhil.techfest.fragment;
 
+import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -37,7 +39,7 @@ public class NavigationDrawerFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 
-    public void setUpNavigationDrawer(int fragmentID, final DrawerLayout drawerLayout, Toolbar toolbar) {
+    public void setUpNavigationDrawer(int fragmentID, final DrawerLayout drawerLayout, final Toolbar toolbar) {
         drawerToggle = new ActionBarDrawerToggle(getActivity(), drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close) {
 
             @Override
