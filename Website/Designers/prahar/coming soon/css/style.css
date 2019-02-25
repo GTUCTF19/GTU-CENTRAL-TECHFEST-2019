@@ -6,6 +6,11 @@ font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     color: #fff;
     background-image: url("https://entrustrr.com/wp-content/uploads/2015/02/slide-bg-full.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+    background-position: 50% 50%;
+  background-attachment: fixed;
+ 
 
 }
 .wrapper{
@@ -47,11 +52,7 @@ font-family: 'Roboto', sans-serif;
   width: 100%;
   height: 100%;
   background:none;
-  background-repeat: no-repeat;
-  background-size: cover;
-    background-position: 50% 50%;
-  background-attachment: fixed;
-  position: fixed;
+  
   z-index: 60;
 }
 
@@ -170,8 +171,9 @@ canvas {
 
 .themost{
   font-size: 1vw;
-  color: #d3d3d3;
-  text-shadow: 0.5px 0.5px #000;
+  color: #2d3d5a;
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px #fff;
 }
 .gtu{
   font-size: 5vw;
