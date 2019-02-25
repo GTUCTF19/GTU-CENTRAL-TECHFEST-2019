@@ -5,38 +5,51 @@
 	<meta name="viewport" content="width=960">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/flipclock.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/flipclock.css"> -->
 <link rel="stylesheet" type="text/css" href="css/animate.css">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Poppins|Roboto" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 <body>
-
+	<!-- container -->
 	<div id="particles-js"></div>
 
-	<div class="wrapper">
+	<div class="wrapper container">
 		<div class="outer">
   <div class="middle">
     <div class="inner">
-      <img src="images/final logo2.png" class="logo" style="height: 15vw;width: auto;"><br>
-                    <h4 class="gtu" style="">GTU Central TechFest'19</h4>
-        <div class="hero"><br>
-                    	<p class="sub-title" style="color: #000;">
+    	<br><br><br><br>
+      <img src="images/final logo2.png" class="logo_ctf"><br>
+                    <h4 class="gtu">GTU Central TechFest'19</h4>
+        <div class="hero">
+                    	<p class="hostedby">
                         	Hosted by Vishwakarma Government Engineering College
                         </p><br><br>
-                        <div class="clock animated flipInX" ></div>
-
-                    </div><br>
-                    <div class="contact">
-                        THE MOST <span class="quotes">AWAITED</span><span class="quotes">INCREDIBLE</span><span class="quotes">SPECTACULAR</span><span class="quotes">STUNNING</span><span class="quotes">MARVELLOUS</span><span class="quotes">ARTISTIC</span><span class="quotes">FANTASTIC</span><span class="quotes">SPLENDID</span><span class="quotes">GIGANTIC</span><span class="quotes">INEVITABLE</span> TECHFEST COMING SOON.
+                        
+	
+				
+					<div id="counter">				
+						
+					</div>		<br><br>	
+					
+					
+				
+			
+                    <div class="themost">
+                        THE MOST <i><span class="quotes">AWAITED</span><span class="quotes">INCREDIBLE</span><span class="quotes">SPECTACULAR</span><span class="quotes">STUNNING</span><span class="quotes">MARVELLOUS</span><span class="quotes">ARTISTIC</span><span class="quotes">FANTASTIC</span><span class="quotes">SPLENDID</span><span class="quotes">GIGANTIC</span><span class="quotes">INEVITABLE</span> </i>TECHFEST COMING SOON.
                         <br><br>
-                        <a href="registermain.php">Go Live</a>
+                        <!-- <a href="registermain.php" class="live">Go Live</a> -->
                     </div>
     </div>
   </div>
 </div>
 
 	</div>
+</div>
 
 	<canvas id="confetti"></canvas>
 
@@ -49,19 +62,25 @@
 		</div>
 	</div>
 
-	<div class="stars"></div>
-	<div class="twinkling"></div>
-	<div class="clouds"></div>
-
-	<img src="images/gtu.png" style="position: absolute!important;padding-left: 20px; padding-top: 2%;left: 0;width:auto;height:20%; overflow: hidden; z-index: 50;">
-      	<img src="images/vgec.png" style="right:0; position: absolute!important;padding-right: 20px;padding-top:2%;width:auto;height: 20%; overflow: hidden;z-index: 50;">
+	<img src="images/gtu.png" class="logo_gtu">
+      	<img src="images/vgec.png"class="logo_vgec">
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="C3counter.js"></script>
+<script type="text/javascript">
+						// Default options 
+						var currentDate = new Date();
+						
+		var futureDate  = new Date("2019-03-29");
+
+		var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+			C3Counter("counter", { startTime :diff });
+					</script>
 <script src="js/particals.js"></script>
 <script src="js/custom.js"></script>
 <script type="text/javascript" src="js/particals-setting.js"></script>
-<script type="text/javascript" src="js/flipclock.js"></script>
-<script type="text/javascript" src="js/newyear.js"></script>
+<!-- <script type="text/javascript" src="js/flipclock.js"></script> -->
+<!-- <script type="text/javascript" src="js/newyear.js"></script> -->
 
 </body>
 </html>
