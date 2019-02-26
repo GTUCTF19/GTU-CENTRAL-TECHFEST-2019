@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  
+  </head>
+<body>
+
+<div class="container-fluid">
+                                            
+  <select name="eventName" id="eventName" >
+                  <option selected="" disabled selected>Enter the event name</option>
+                  </select>
+  <select name="subEventName" id="subEventName">
+                  <option selected="" disabled selected>Enter the sub event name</option>
+                  </select>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+  <script>
+  	$.ajax({
+        url: "register.php",
+        contentType: "application/json",
+        type: "post",
+        data: "",
+        success: function (data) {
+           // you will get response from your php page (what you echo or print) 
+           
+           var newdata = jQuery.parseJSON(data);
+          if(data){
+               
+            // $("#eventName").html(data);
+            for($i=1;$i<newdata.length;$i++){
+            	var o = new Option(newdata[$i],newdata[$i] );
+             
+				$(o).html(newdata[$i]);
+		
+				$("#eventName").append(o);
+
+        
+
+			}
+    
+
+          }
+           
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+           console.log(textStatus, errorThrown);
+        }
+
+  });
+    $( document ).on( "change","#eventName", function() {
+        var eventName = $("#eventName option:selected").val();
+        alert(eventName);
+        $.ajax({
+        url: "subevent.php",
+        contentType: "application/json",
+        type: "post",
+        cache: false,
+        data: { eventName: eventName},
+        success: function (data) {
+           // you will get response from your php page (what you echo or print) 
+           
+         
+           
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+           console.log(textStatus, errorThrown);
+        }
+
+  });
+       
+  
+  
+});
+
+
+   
+    
+  </script>
+
+</body>
+
+</html>
