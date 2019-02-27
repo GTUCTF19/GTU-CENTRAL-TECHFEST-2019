@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
 </head>
 <body>
@@ -28,6 +29,45 @@
 	<!-- TECHFEST LOGO -->
 	<img src="images/web logo part 2.png" style="width: 8%;position:fixed;top:4%;left:50%;transform:translateX(-50%); z-index: 3;background-color: #0D5002;border-radius: 50%;padding: 0.2%;box-sizing: border-box; ">
 
+	<!-- navbar -->
+	<nav class="navbar custom-navbar fixed-top navbar-expand-sm">
+
+	  <!-- Links -->
+	  <ul class="navbar-nav mr-auto">
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Home</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Events</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">location</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">schedule</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Registration Portal</a>
+	    </li>
+	  </ul>
+	  <ul class="navbar-nav my-2 my-lg-0">
+	    <li class="nav-item">
+	      <a class="nav-link" href="#overview">About us</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">contact us</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">location</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Registration Portal</a>
+	    </li>
+	  </ul>
+
+	</nav>
+
+	<!-- homepage -->
 	<section id="homepage">
 		<div class="middle">
     		<div class="inner">
@@ -39,6 +79,7 @@
     	</div>
 	</section>
 
+	<!-- overview -->
 	<section id="overview">
 		<div class="middle">
     		<div class="inner container"><br>
@@ -46,7 +87,7 @@
 		      
 		        <div class="col-6">
 		          <h1 class="title-widget">When</h1>
-		          <h5>15-16 March</h5>
+		          <h5>28-29 March</h5>
 		        </div>
 		        <div class="col-6">
 		          <h1 class="title-widget">Where</h1>
@@ -75,12 +116,39 @@
 		</div>
 	</section>
 
+
+	<!-- footer -->
 	<div class="footer">
-		<div style="width: 102%;position: fixed;bottom:0;left:-1%;background:url('footer_black1.2.svg');height:8%;background-repeat: no-repeat;background-size: cover;z-index: 3;">
-			<p class="copyright" style="color: #fff;position: fixed;z-index: 3; bottom:0;left:1%;text-transform: uppercase;"> &copy Vishwakarma Government Enginerring College</p>
-			<p clsass="copyright" style="color: #fff;position: fixed;z-index: 3; bottom:0;right:1%;text-transform: uppercase;"> Hosting Partner : LMCP</p>
+		<div class="mr-auto" style="width: 102%;position: fixed;bottom:0;left:-1%;background:url('footer_black1.2.svg');height:9%;background-repeat: no-repeat;background-size: cover;z-index: 3;">
+			<p class="copyright" style="color: #fff;position: fixed;z-index: 3; bottom:0.5%;left:1%;text-transform: uppercase;"> &copy Vishwakarma Government Enginerring College</p>
+			<p style="color: #fff;position: fixed;z-index: 3; bottom:0.5%;right:13%;text-transform: uppercase;"> Hosting Partner : LMCP</p>
+			<img src="images/LMCP-Logo.png" style="position: fixed;z-index: 3;width: 2.5%; bottom:1%;right:10%;">
+			<button class="btn-dark" style="color: #fff;position: fixed;z-index: 3; bottom:2%;right:1%;text-transform: uppercase;"> OUR TEAM</button>
 		</div>
 	</div>
+
+	<!-- social -->
+	<ul class="social">
+	  <li>
+	    <a href="#" class="facebook"><span>Facebook</span><i class="fa fa-facebook"></i></a>
+	  </li>
+	  <li>
+	    <a href="#" class="insta"><span>Instagram</span><i class="fa fa-instagram"></i></a>
+	  </li>
+	  <li>
+	    <a href="#" class="twitter"><span>Twitter</span><i class="fa fa-twitter"></i></a>
+	  </li>
+	</ul>
+
+	<!-- scroll -->
+	<div class="scroll">
+	  <div class="chevron"></div>
+	  <div class="chevron"></div>
+	  <div class="chevron"></div>
+	</div>
+
+	<!-- countdown -->
+	<div id="counter"></div>
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="js/particals.js"></script>
@@ -94,5 +162,15 @@
           });
         });
       </script>
+      <script type="text/javascript" src="js/C3counter.js"></script>
+<script type="text/javascript">
+						// Default options 
+						var currentDate = new Date();
+						
+		var futureDate  = new Date("2019-03-29");
+
+		var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+			C3Counter("counter", { startTime :diff });
+					</script>
 </body>
 </html>
