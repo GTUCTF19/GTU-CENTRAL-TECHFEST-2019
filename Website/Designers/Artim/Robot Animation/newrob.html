@@ -10,10 +10,10 @@ svg:not(:root){overflow:hidden;}
 }
 /*! CSS Used from: https://thoughtbot.com/blog/assets/posts/svg-animations-7ecad19ccf9e287ce46ec3dfcfc5470269ba611d5bad0ce0dfe829e15de1c24c.css ; media=screen */
 @media screen{
-.example-container{border:1px solid #b5b5c0;margin:1rem auto 1.5rem;text-align:center;width:90%;}
-.example-container:hover{cursor:pointer;}
+.example-container{margin:1rem auto 1.5rem;text-align:center;width:90%;}
+
 .example-container.svg-animation{height:200px;overflow:hidden;position:relative;}
-.example-container.svg-animation::after{position:absolute;right:0;bottom:0;background:rgba(181,181,192,0.5);border:solid #b5b5c0;border-radius:2px 0 0 0;border-width:1px 0 0 1px;content:"Hover to trigger the animation";display:block;font-size:12px;padding:0.25em 1em;}
+.example-container.svg-animation::after{position:absolute;right:0;bottom:0;background:rgba(181,181,192,0.5);border:solid #b5b5c0;border-radius:2px 0 0 0;border-width:1px 0 0 1px;;display:block;font-size:12px;padding:0.25em 1em;}
 .ralph{height:280px;width:280px;margin:-14px auto 0;}
 .example-container:hover .ralph__background{-webkit-animation:grow 0.5s ease-out forwards;animation:grow 0.5s ease-out forwards;}
 .example-container:hover .ralph__body{-webkit-animation:moveInUp 0.5s ease-out forwards;animation:moveInUp 0.5s ease-out forwards;-webkit-animation-delay:0.2s;animation-delay:0.2s;}
@@ -27,22 +27,36 @@ svg:not(:root){overflow:hidden;}
 /*! CSS Used keyframes */
 @-webkit-keyframes grow{0%{-webkit-transform:scale(0.3);transform:scale(0.3);}30%{-webkit-transform:scale(1.2);transform:scale(1.2);}60%{-webkit-transform:scale(0.9);transform:scale(0.9);}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1);}}
 @keyframes grow{0%{-webkit-transform:scale(0.3);transform:scale(0.3);}30%{-webkit-transform:scale(1.2);transform:scale(1.2);}60%{-webkit-transform:scale(0.9);transform:scale(0.9);}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1);}}
-@-webkit-keyframes moveInUp{0%{-webkit-transform:translate3d(0, 500px, 0);transform:translate3d(0, 500px, 0);}60%{-webkit-transform:translate3d(0, -12px, 0);transform:translate3d(0, -12px, 0);}80%{-webkit-transform:translate3d(0, 8px, 0);transform:translate3d(0, 8px, 0);}100%{opacity:1;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}}
+@-webkit-keyframes moveInUp{0%{-webkit-transform:translate3d(0, 500px, 0);	transform: translate(550px,500px);transform:translate3d(0, 500px, 0);}60%{-webkit-transform:translate3d(0, -12px, 0);transform:translate3d(0, -12px, 0);}80%{-webkit-transform:translate3d(0, 8px, 0);transform:translate3d(0, 8px, 0);}100%{opacity:1;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}}
 @keyframes moveInUp{0%{-webkit-transform:translate3d(0, 500px, 0);transform:translate3d(0, 500px, 0);}60%{-webkit-transform:translate3d(0, -12px, 0);transform:translate3d(0, -12px, 0);}80%{-webkit-transform:translate3d(0, 8px, 0);transform:translate3d(0, 8px, 0);}100%{opacity:1;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}}
 @-webkit-keyframes moveInDown{0%{-webkit-transform:translate3d(0, -500px, 0);transform:translate3d(0, -500px, 0);}60%{-webkit-transform:translate3d(0, 6px, 0);transform:translate3d(0, 6px, 0);}80%{-webkit-transform:translate3d(0, -3px, 0);transform:translate3d(0, -3px, 0);}100%{opacity:1;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}}
 @keyframes moveInDown{0%{-webkit-transform:translate3d(0, -500px, 0);transform:translate3d(0, -500px, 0);}60%{-webkit-transform:translate3d(0, 6px, 0);transform:translate3d(0, 6px, 0);}80%{-webkit-transform:translate3d(0, -3px, 0);transform:translate3d(0, -3px, 0);}100%{opacity:1;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}}
 @-webkit-keyframes smallMoveInUp{0%{-webkit-transform:translate3d(0, 8px, 0);transform:translate3d(0, 8px, 0);}50%{-webkit-transform:translate3d(0, -2px, 0);transform:translate3d(0, -2px, 0);}100%{opacity:1;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}}
 @keyframes smallMoveInUp{0%{-webkit-transform:translate3d(0, 8px, 0);transform:translate3d(0, 8px, 0);}50%{-webkit-transform:translate3d(0, -2px, 0);transform:translate3d(0, -2px, 0);}100%{opacity:1;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}}
+	.ralph{
+		align-items: center!important;
+		align: center!important;
+		padding-right: 50px;
+	}
+	.example-container{
+			transform: translate(550px,500px);
+	}
 	</style>
 </head>
-<body>
-  <div class="example-container svg-animation">
-<svg class="ralph" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480.6 468.3" enable-background="new 0 0 480.6 468.3" xml:space="preserve">
-    <g>
-      <path class="ralph__background" fill="#C32F34" d="M236.3,57.5c-71.1,0-128.8,57.7-128.8,128.8c0,71.1,57.7,128.8,128.8,128.8c71.1,0,128.8-57.7,128.8-128.8
-        C365.1,115.1,307.4,57.5,236.3,57.5z"></path>
+<body style="background-color: #121212;">
+	<!-- < media="screen"> -->
+
+	<style media="screen">
+	window.onload = function() {
+var ball = document.getElementById('Layer_1');
+Layer_1.style.marginLeft = "25px";
+};
+	</style>
+	<!-- </style> -->
+  <div class="example-container svg-animation" style="width: 200px; height: 200px; align: center;">
+<svg class="ralph" version="1.1" align="center" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480.6 468.3" enable-background="new 0 0 480.6 468.3" xml:space="preserve">
       <g>
-        <path class="ralph__body" fill="#FFFFFF" d="M202.8,192.7h-5.2v36.6h0c1.7,2.1,2.8,4.7,2.8,7.6c0,3.6-1.6,6.8-4.2,9l-3.2-3.2c1.8-1.3,2.9-3.4,2.9-5.8
+        <path class="ralph__body" fill="#000" d="M202.8,192.7h-5.2v36.6h0c1.7,2.1,2.8,4.7,2.8,7.6c0,3.6-1.6,6.8-4.2,9l-3.2-3.2c1.8-1.3,2.9-3.4,2.9-5.8
           c0-4-3.3-7.3-7.3-7.3s-7.3,3.3-7.3,7.3c0,2.4,1.1,4.5,2.9,5.8l-3.2,3.2c-2.5-2.2-4.2-5.4-4.2-9c0-2.9,1.1-5.6,2.8-7.6v-57
           c0.1-2.2,1.9-4,4.1-4l104.5,0c2.2,0,4,1.8,4.1,4v57c1.8,2.1,2.8,4.7,2.8,7.6c0,3.6-1.6,6.8-4.2,9l-3.2-3.2
           c1.7-1.3,2.9-3.4,2.9-5.8c0-4-3.3-7.3-7.3-7.3s-7.3,3.3-7.3,7.3c0,2.4,1.1,4.5,2.9,5.8l-3.2,3.2c-2.6-2.2-4.2-5.4-4.2-9
@@ -50,30 +64,36 @@ svg:not(:root){overflow:hidden;}
           L202.8,192.7z"></path>
         <g>
           <g>
-            <path class="ralph__wifi-bar" fill="#FFFFFF" d="M236,109.1c7.3,0,13.8,2.6,17.9,6.5l3.2-4.6c-5.1-4.5-12.6-7.4-21.1-7.4l0,0c-8.5,0-16.1,2.9-21.1,7.4
+            <path class="ralph__wifi-bar" fill="#000" d="M236,109.1c7.3,0,13.8,2.6,17.9,6.5l3.2-4.6c-5.1-4.5-12.6-7.4-21.1-7.4l0,0c-8.5,0-16.1,2.9-21.1,7.4
                 l3.2,4.6C222.2,111.7,228.8,109.1,236,109.1"></path>
-            <path class="ralph__wifi-bar" fill="#FFFFFF" d="M236.4,97.5c7.9,0,15.3,2.3,20.8,6.5c1.1,0.8,2.1,1.7,3,2.7l3.2-4.6c-6.2-6.1-16-10.1-27-10.1l0,0
+            <path class="ralph__wifi-bar" fill="#000" d="M236.4,97.5c7.9,0,15.3,2.3,20.8,6.5c1.1,0.8,2.1,1.7,3,2.7l3.2-4.6c-6.2-6.1-16-10.1-27-10.1l0,0
                 c-11.3,0-21.3,4.1-27.5,10.5l3.2,4.6c1-1.1,2.1-2.2,3.4-3.2C221.1,99.7,228.5,97.5,236.4,97.5"></path>
-            <path class="ralph__wifi-bar" fill="#FFFFFF" d="M236,86.3c12.6,0,23.7,4.6,30.3,11.6l3.2-4.5c-7.7-7.6-19.9-12.5-33.5-12.5l0,0
+            <path class="ralph__wifi-bar" fill="#000" d="M236,86.3c12.6,0,23.7,4.6,30.3,11.6l3.2-4.5c-7.7-7.6-19.9-12.5-33.5-12.5l0,0
                 c-13.7,0-25.8,4.9-33.5,12.6l3.2,4.5C212.3,90.9,223.4,86.3,236,86.3"></path>
           </g>
           <g class="ralph__head">
-            <path fill="#FFFFFF" d="M262,121.5h-53.1c-2.2,0-4,1.8-4,4v34.6c0,2.2,1.8,4,4,4H262c2.2,0,4-1.8,4-4v-34.6
+            <path fill="#000" d="M262,121.5h-53.1c-2.2,0-4,1.8-4,4v34.6c0,2.2,1.8,4,4,4H262c2.2,0,4-1.8,4-4v-34.6
                 C266,123.3,264.2,121.5,262,121.5z M221.9,146.9c-3.7,0-6.8-3-6.8-6.8c0-3.7,3-6.8,6.8-6.8c3.7,0,6.8,3,6.8,6.8
                 C228.7,143.9,225.7,146.9,221.9,146.9z M249.1,146.9c-3.7,0-6.8-3-6.8-6.8c0-3.7,3-6.8,6.8-6.8c3.7,0,6.8,3,6.8,6.8
                 C255.9,143.9,252.8,146.9,249.1,146.9z"></path>
-            <path fill="#FFFFFF" d="M225.4,140.1c0,1.9-1.5,3.5-3.5,3.5c-1.9,0-3.5-1.6-3.5-3.5c0-1.9,1.6-3.5,3.5-3.5
+            <path fill="#000" d="M225.4,140.1c0,1.9-1.5,3.5-3.5,3.5c-1.9,0-3.5-1.6-3.5-3.5c0-1.9,1.6-3.5,3.5-3.5
                 C223.9,136.7,225.4,138.2,225.4,140.1z"></path>
-            <path fill="#FFFFFF" d="M252.6,140.1c0,1.9-1.6,3.5-3.5,3.5c-1.9,0-3.5-1.6-3.5-3.5c0-1.9,1.5-3.5,3.5-3.5
+            <path fill="#000" d="M252.6,140.1c0,1.9-1.6,3.5-3.5,3.5c-1.9,0-3.5-1.6-3.5-3.5c0-1.9,1.5-3.5,3.5-3.5
                 C251,136.7,252.6,138.2,252.6,140.1z"></path>
           </g>
         </g>
       </g>
     </g>
   </svg>
-	
+
 
 </div>
 </div>
+<script type="text/javascript">
+// $( document ).ready(function() {
+	// console.log( "ready!" );
+// });
+$("#test p").addClass("load");
+</script>
 </body>
 </html>
