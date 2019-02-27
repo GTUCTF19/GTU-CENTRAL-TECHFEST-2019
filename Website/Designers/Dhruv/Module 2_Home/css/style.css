@@ -11,7 +11,9 @@ background-image: url("");
 	font-size: 100%;
 }
 
-
+section {
+	height: 100vh;
+}
 .footer-icon{font-size:1.5em;-webkit-transition:color 1s;transition:color 1s;}
 .footer-background{pointer-events:none;}
 .bottom-line{margin-top:2vw;margin-bottom:1vw;border-bottom:.1vw solid #fff;}
