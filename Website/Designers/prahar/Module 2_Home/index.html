@@ -3,36 +3,96 @@
 <head>
 	<title></title>
 	<meta name="viewport" content="width=960">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-
-<link rel="stylesheet" type="text/css" href="css/animate.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Great+Vibes">
-
-<link rel="stylesheet" type="text/css" href="css/selector1.css">
-<link rel="stylesheet" type="text/css" href="css/selector2.css">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 <body>
 
+	<!-- Particals -->
+	<div id="particles-js"></div>
+
+	<!-- Header -->
 	<div style="width: 102%;position: fixed;top:-4%;left:-1%;right:-1%;background:url('Design (5).svg');height:11vw;background-repeat: no-repeat;background-size: cover;z-index: 2;">
 	</div>
-	<img src="images/gtu.png" style="width: 6%;position:absolute;top:10%;left:1%;z-index: 3;box-sizing: border-box;">
-	<img src="images/vgec.png" style="width: 6%;position:absolute;top:10%;right:1%;z-index: 3;box-sizing: border-box;">
-	<img src="images/web logo part 2.png" style="width: 10%;position:absolute;top:2%;left:50%;transform:translateX(-50%); z-index: 3;background-color: #0D5002;border-radius: 50%;padding: 0.2%;box-sizing: border-box; border-left:2px #B3D6CB outset">
 
-	<div style="width: 102%;position: fixed;bottom:0;left:-1%;background:url('footer_black.svg');height:10%;background-repeat: no-repeat;background-size: cover;z-index: 1;">
-	</div>
-	<p class="copyright" style="color: #fff;position: absolute;z-index: 3; bottom:0;left:1%;text-transform: uppercase;"> &copy Vishwakarma Government Enginerring College</p>
-	<p class="copyright" style="color: #fff;position: absolute;z-index: 3; bottom:0;right:1%;text-transform: uppercase;"> Hosting Partner : LMCP</p>
+	<!-- GTU -->
+	<img src="images/gtu.png" style="width: 4%;position:fixed;top:10%;left:1%;z-index: 3;box-sizing: border-box;">
 	
+	<!-- VGEC -->
+	<img src="images/vgec.png" style="width: 4%;position:fixed;top:10%;right:1%;z-index: 3;box-sizing: border-box;">
+	
+	<!-- TECHFEST LOGO -->
+	<img src="images/web logo part 2.png" style="width: 8%;position:fixed;top:4%;left:50%;transform:translateX(-50%); z-index: 3;background-color: #0D5002;border-radius: 50%;padding: 0.2%;box-sizing: border-box; ">
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script src="js/particals.js"></script>
-<script src="js/custom.js"></script>
-<script type="text/javascript" src="js/particals-setting.js"></script>
+	<section id="homepage">
+		<div class="middle">
+    		<div class="inner">
+    			<h4 class="gtu">GTU Central TechFest'19</h4>
+    			<p class="hostedby">
+                    Hosted by Vishwakarma Government Engineering College
+                </p>
+    		</div>
+    	</div>
+	</section>
 
+	<section id="overview">
+		<div class="middle">
+    		<div class="inner container"><br>
+			<div class="row">
+		      
+		        <div class="col-6">
+		          <h1 class="title-widget">When</h1>
+		          <h5>15-16 March</h5>
+		        </div>
+		        <div class="col-6">
+		          <h1 class="title-widget">Where</h1>
+		          <h5>At Vishwakarma Government Engineering College</h5>
+		        </div>
+		      	
+		    </div>
+		    <br><br><br>
+		    <div class="row">
+		      <div class="wow fadeInUp col-12 col-12" data-wow-delay="0.6s">
+		        <h1 class="title-widget">OverView</h1>
+		        <br>
+		        <p>The Central TechFest 2k18 is annual science n tech carnival of GTU. Techfest2k18 summons all the unconventional and ingenious Engineers to celebrate their freshness in our fair. Not just a fiesta of engineering know-hows, but a Platform to ignite and foster ideas dug deep inside bright brains from across the widely spread boundaries of GTU throughout Gujarat.
+				The sole motto of Techfest 2k18 is to transform potential ideas to minted ones, and realising the need to reform and transfigure the present day scenario in Gujarat, develop those ideas into crusader of better and improved lives of millions, earning higher and higher dignity for the state.
+				Techfest 2k18 also strives to bridge the gap between industry and academiA, by encompassing
+				competitions
+				Expert talks
+				Exhibition
+				Workshops
+				Tech and non tech events
+				Startup Fair
+				Tf2k18 aims to launch a wave of bright minds and path breaking solutions to sustainable future.</p>
+		      </div>
+		  	</div>
+		  </div>
+		</div>
+	</section>
 
+	<div class="footer">
+		<div style="width: 102%;position: fixed;bottom:0;left:-1%;background:url('footer_black1.2.svg');height:8%;background-repeat: no-repeat;background-size: cover;z-index: 1;">
+			<p class="copyright" style="color: #fff;position: fixed;z-index: 3; bottom:0;left:1%;text-transform: uppercase;"> &copy Vishwakarma Government Enginerring College</p>
+			<p clsass="copyright" style="color: #fff;position: fixed;z-index: 3; bottom:0;right:1%;text-transform: uppercase;"> Hosting Partner : LMCP</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/particals.js"></script>
+	<script src="js/custom.js"></script>
+	<script type="text/javascript" src="js/particals-setting.js"></script>
+	<script src="js/jquery scrollify.js"></script>
+	<script>
+        $(function() {
+          $.scrollify({
+            section : "section",
+          });
+        });
+      </script>
 </body>
 </html>
