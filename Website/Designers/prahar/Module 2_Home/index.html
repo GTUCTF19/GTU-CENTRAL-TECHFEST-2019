@@ -10,21 +10,29 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+
+<link rel="stylesheet" type="text/css" href="css/selector1.css">
+<link rel="stylesheet" type="text/css" href="css/selector2.css">
+
 </head>
 <body>
 
-	<!-- Particals -->
-	<div id="particles-js"></div>
-
-	<!-- Header -->
 	<div style="width: 102%;position: fixed;top:-4%;left:-1%;right:-1%;background:url('Design (5).svg');height:11vw;background-repeat: no-repeat;background-size: cover;z-index: 2;">
 	</div>
+	<img src="images/gtu.png" style="width: 6%;position:absolute;top:10%;left:1%;z-index: 3;box-sizing: border-box;">
+	<img src="images/vgec.png" style="width: 6%;position:absolute;top:10%;right:1%;z-index: 3;box-sizing: border-box;">
+	<img src="images/web logo part 2.png" style="width: 10%;position:absolute;top:2%;left:50%;transform:translateX(-50%); z-index: 3;background-color: #0D5002;border-radius: 50%;padding: 0.2%;box-sizing: border-box; border-left:2px #B3D6CB outset">
 
-	<!-- GTU -->
-	<img src="images/gtu.png" style="width: 4%;position:fixed;top:10%;left:1%;z-index: 3;box-sizing: border-box;">
-	
-	<!-- VGEC -->
-	<img src="images/vgec.png" style="width: 4%;position:fixed;top:10%;right:1%;z-index: 3;box-sizing: border-box;">
+	<div style="width: 102%;position: fixed;bottom:0;left:-1%;background:url('footer_black.svg');height:10%;background-repeat: no-repeat;background-size: cover;z-index: 1;">
+	</div>
+	<p class="copyright" style="color: #fff;position: absolute;z-index: 3; bottom:0;left:1%;text-transform: uppercase;"> &copy Vishwakarma Government Enginerring College</p>
+	<p class="copyright" style="color: #fff;position: absolute;z-index: 3; bottom:0;right:1%;text-transform: uppercase;"> Hosting Partner : LMCP</p>
 	
 	<!-- TECHFEST LOGO -->
 	<img src="images/web logo part 2.png" style="width: 8%;position:fixed;top:4%;left:50%;transform:translateX(-50%); z-index: 3;background-color: #0D5002;border-radius: 50%;padding: 0.2%;box-sizing: border-box; ">
@@ -150,6 +158,7 @@
 	<!-- countdown -->
 	<div id="counter"></div>
 
+
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="js/particals.js"></script>
 	<script src="js/custom.js"></script>
@@ -172,5 +181,9 @@
 		var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 			C3Counter("counter", { startTime :diff });
 					</script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/particals.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript" src="js/particals-setting.js"></script>
 </body>
 </html>

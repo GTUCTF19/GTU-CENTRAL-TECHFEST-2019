@@ -744,7 +744,7 @@ footer {
 }
 
 .title-widget::before {
-    background-color: ##000000;
+    background-color: #92bd1b;
     content: "";
     height: 22px;
     left: 0px;

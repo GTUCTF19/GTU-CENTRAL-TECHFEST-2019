@@ -1,12 +1,12 @@
-.back {
-  /*background: gray;
-  background-image: url("http://www.techessay.org/wp-content/uploads/2018/05/robot2-e1459359345121.jpg");
-  background-repeat: no-repeat;
+body {
+    background: gray;
+background-image: url("https://cdn2.vectorstock.com/i/1000x1000/57/91/abstract-background-technology-electronic-vector-21165791.jpg");
+    background-repeat: no-repeat;
   background-size: cover;
+
   width: auto;
   height: 100vh;
   background-position: 50% 50%;
-  *//*background-attachment: fixed;*/
 }
 #particles-js {
   top: 0;
