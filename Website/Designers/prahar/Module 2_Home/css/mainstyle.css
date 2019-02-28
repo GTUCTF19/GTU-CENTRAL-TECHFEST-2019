@@ -1,6 +1,7 @@
 html{
-    cursor:url(cursor/select.cur),auto;
+    cursor:url(../cursor/select.cur),auto;
   }
+
 body {
     background: gray;
 background-image: url("https://cdn2.vectorstock.com/i/1000x1000/57/91/abstract-background-technology-electronic-vector-21165791.jpg");
@@ -21,85 +22,7 @@ background-image: url("https://cdn2.vectorstock.com/i/1000x1000/57/91/abstract-b
   z-index: 2;
 }
 
-#homepage {
-  top: 0;
-  left: 0;
-  display: table;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  background: #efefef;
-  background-image: url("../Design (9).svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-attachment: fixed;
-}
-#overview{
-  height: 100%;
-  display: table;
-  text-align: justify;
-  background: #efefef;
-  width: 100%;
-  left: 0;
-  position: absolute;
-  top: 100%;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-attachment: fixed;
-}
 
-.title-widget {
-  color: #000;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1;
-  position: relative;
-  text-transform: uppercase;
-  font-family: 'Fjalla One', sans-serif;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 25px;
-  margin-left: 0;
-  padding-left: 28px;
-}
-
-.title-widget::before {
-    background-color: #000;
-    content: "";
-    height: 22px;
-    left: 0px;
-    position: absolute;
-    top: -2px;
-    width: 5px;
-}
-
-
-
-.middle {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-#homepage .inner {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  /*whatever width you want*/
-}
-#overview .inner {
-  margin-top:5%;
-  padding: 1.5%;
-  box-shadow: inset 0 0 10px #000;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  color: #000;
-  /*whatever width you want*/
-}
 
 .custom-navbar{
   position: fixed;
@@ -226,7 +149,7 @@ background-image: url("https://cdn2.vectorstock.com/i/1000x1000/57/91/abstract-b
 
 
 #counter {
-  position: absolute;
+  position: fixed;
   bottom:3%;
   left: 51%;
   transform: translateX(-50%);
@@ -258,92 +181,8 @@ background-image: url("https://cdn2.vectorstock.com/i/1000x1000/57/91/abstract-b
   background:#efefef;
 }
 
-/*scroll*/
-.chevron {
-  position: absolute;
-  width: 28px;
-  height: 8px;
-  bottom:18%;
-  right:2%;
-  z-index: 2;
-  opacity: 0;
-  transform: scale3d(0.5, 0.5, 0.5);
-  animation: move 3s ease-out infinite;
-}
-
-.chevron:first-child {
-  animation: move 3s ease-out 1s infinite;
-}
-
-.chevron:nth-child(2) {
-  animation: move 3s ease-out 2s infinite;
-}
-
-.chevron:before,
-.chevron:after {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 51%;
-  background: #000;
-}
-
-.chevron:before {
-  left: 0;
-  transform: skew(0deg, 30deg);
-}
-
-.chevron:after {
-  right: 0;
-  width: 50%;
-  transform: skew(0deg, -30deg);
-}
-
-@keyframes move {
-  25% {
-    opacity: 1;
-
-  }
-  33% {
-    opacity: 1;
-    transform: translateY(30px);
-  }
-  67% {
-    opacity: 1;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-  }
-}
-
-.text {
-  display: block;
-  z-index: 2;
-  margin-top: 75px;
-  margin-left: -30px;
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 12px;
-  color: #2d3d5a;
-  text-transform: uppercase;
-  white-space: nowrap;
-  opacity: .25;
-  animation: pulse 2s linear alternate infinite;
-}
-
-@keyframes pulse {
-  to {
-    opacity: 1;
-  }
-}
 
 
-
-
-
- /*! CSS Used from: https://thoughtbot.com/blog/assets/application-e00fe12a5e60e5f6a241ba4403608b3a886b47f66cd9c9de78bcfe58ad98ad78.css ; media=all */
 @media all{
 *,*::after,*::before{box-sizing:inherit;}
 svg:not(:root){overflow:hidden;}
@@ -353,8 +192,7 @@ svg:not(:root){overflow:hidden;}
 }
 
 .body {
-  -webkit-animation:moveInUp 0
-  .5s ease-out forwards;animation:moveInUp 0.5s ease-out forwards;-webkit-animation-delay:0.2s;animation-delay:0.2s;
+  -webkit-animation:moveInUp 0.5s ease-out forwards;animation:moveInUp 0.5s ease-out forwards;-webkit-animation-delay:0.2s;animation-delay:0.2s;
 }
 
 .head {
@@ -378,7 +216,7 @@ svg:not(:root){overflow:hidden;}
 .example-container{margin:1rem auto 1.5rem;text-align:center;width:90%;}
 
 .example-container.svg-animation{height:200px;overflow:hidden;position:relative;}
-.example-container.svg-animation::after{position:absolute;z-index:3;right:0;bottom:0;background:rgba(181,181,192,0.5);border:solid #b5b5c0;border-radius:2px 0 0 0;border-width:1px 0 0 1px;;display:block;font-size:12px;padding:0.25em 1em;}
+.example-container.svg-animation::after{position:absolute;right:0;bottom:0;background:rgba(181,181,192,0.5);border:solid #b5b5c0;border-radius:2px 0 0 0;border-width:1px 0 0 1px;;display:block;font-size:12px;padding:0.25em 1em;}
 .ralph{height:280px;width:280px;margin:-14px auto 0;}
 .ralph__background,.ralph__body,.ralph__head,.ralph__wifi-bar{opacity:0;-webkit-transform-origin:50%;transform-origin:50%;}
 }
@@ -397,26 +235,5 @@ svg:not(:root){overflow:hidden;}
     padding-right: 50px;
   }
   .example-container{
-
-    position: fixed;
-    z-index: 3;
-    bottom:10%;
-    right:-6%;
-
-
-      transform: translate(225%,150%);
-  }
-
-  @media (min-width: 100px) and (max-width: 300px)
-  {
-    #topper {
-      top: 0px;
-    }
-    .inner {
-      margin-top: 100%;
-    }
-    .footer svg {
-      bottom: -5%;
-    }
-
+      transform: translate(550px,500px);
   }
