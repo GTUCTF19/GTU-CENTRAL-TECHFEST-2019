@@ -62,7 +62,7 @@ background-image: url("https://cdn2.vectorstock.com/i/1000x1000/57/91/abstract-b
   font-family: 'Fjalla One', sans-serif;
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 25px;
+  margin-bottom: 3%;
   margin-left: 0;
   padding-left: 28px;
 }
@@ -71,7 +71,7 @@ background-image: url("https://cdn2.vectorstock.com/i/1000x1000/57/91/abstract-b
     background-color: #000;
     content: "";
     height: 22px;
-    left: 0px;
+    left: 0%;
     position: absolute;
     top: -2px;
     width: 5px;
@@ -110,12 +110,12 @@ background-image: url("https://cdn2.vectorstock.com/i/1000x1000/57/91/abstract-b
 .custom-navbar li a { 
     color: #fff;
     background-color: transparent;
-    font-size: 12px;
+    font-size: 75%;
     font-weight: 600;
     letter-spacing: 0.6px;
     text-transform: uppercase;
-    line-height: 8px;
-  margin-top:8px;
+    line-height: -10%;
+  margin-top:0%;
     transition: all 0.4s ease-in-out;
 }
 
@@ -353,8 +353,7 @@ svg:not(:root){overflow:hidden;}
 }
 
 .body {
-  -webkit-animation:moveInUp 0
-  .5s ease-out forwards;animation:moveInUp 0.5s ease-out forwards;-webkit-animation-delay:0.2s;animation-delay:0.2s;
+  -webkit-animation:moveInUp 0.5s ease-out forwards;animation:moveInUp 0.5s ease-out forwards;-webkit-animation-delay:0.2s;animation-delay:0.2s;
 }
 
 .head {
@@ -397,18 +396,41 @@ svg:not(:root){overflow:hidden;}
     padding-right: 50px;
   }
   .example-container{
-      transform: translate(225%,150%);
+      transform: translate(225%,90%);
   }
 
-  @media (min-width: 100px) and (max-width: 300px)
+  /*@media (min-width: 300px) and (max-width: 450px)
   {
-    #topper {
-      top: 0px;
-    }
-    .inner {
-      margin-top: 100%;
-    }
-    .footer svg {
-      bottom: -5%;
-    }
+  	.Header{
+  		top: 100px!important;
+  	}
   }
+ @media (min-width: 800px) and (max-width: 1000px)
+  {
+  	.Header{
+  		height: 8vw!important;
+  		top:-2%!important;
+	  	}
+  }*/
+  .atv {
+  	width: 7%; transform: translate(-100%,816%);  /*animation-delay:2s;*/
+  	animation:fadein 4s;
+animation-timing-function:linear;
+animation-delay:1s;
+animation-fill-mode:forwards, none;
+animation-iteration-count: 1;
+-webkit-animation-iteration-count: 1;
+-webkit-animation:fadein 4s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-delay:1s;
+-webkit-animation-fill-mode: forwards, none;
+  }
+
+   @keyframes fadein {
+   	0%{ transform: translate(-100%,816%); }
+  /* 	40%{ transform: translate(200%,816%); }
+   	60%{ transform: translate(250%,816%); }
+   	80%{ transform: translate(270%,816%); }
+   	90%{ transform: translate(290%,816%); }*/
+   	100%{ transform: translate(300%,818%);}
+   }
