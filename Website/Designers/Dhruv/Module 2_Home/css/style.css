@@ -32,21 +32,3 @@ section {
 .center-footer a:hover{color:#aaa!important;}
 .developer{text-align:center;font-size:1em;}
 
-.gtu{
-  font-size: 5vw;
-  color: #fff;
-  text-align: center;
-  top: auto;
-  transform:translate(0px,200px);
-  width: auto;
-}
-.host{
-   color: #d3d3d3; font-size: 1.8vw; width: auto;
-     transform:translate(0px,200px);
-   text-align: center;
-   top: auto ;
-   width: auto;
-}
-.innner{
-  transform:translate(0px,500px);
-}
