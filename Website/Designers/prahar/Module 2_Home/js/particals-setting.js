@@ -1,20 +1,20 @@
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 20,
+      "value": 25,
       "density": {
         "enable": true,
         "value_area": 100
       }
     },
     "color": {
-      "value": "#01392C"
+      "value": "#2d3d5a"
     },
     "shape": {
       "type": ["star"],
       "stroke": {
         "width": 0,
-        "color": "#01392C"
+        "color": "#2d3d5a"
       },
       "polygon": {
         "nb_sides": 5
@@ -48,7 +48,7 @@ particlesJS("particles-js", {
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#01392C",
+      "color": "#2d3d5a",
       "opacity": 0.4,
       "width": 1
     },
