@@ -9,6 +9,7 @@ $('.counter').each(function () {
         }
     });
 });
+
 (function() {
 
     var quotes = $(".quotes");
