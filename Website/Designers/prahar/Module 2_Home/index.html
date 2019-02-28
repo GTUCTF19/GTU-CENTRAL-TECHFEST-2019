@@ -23,16 +23,19 @@
 </head>
 <body>
 
+	<!-- particals -->
+	<div id="particles-js"></div>
+
+	<!-- header -->
 	<div style="width: 102%;position: fixed;top:-4%;left:-1%;right:-1%;background:url('Design (5).svg');height:11vw;background-repeat: no-repeat;background-size: cover;z-index: 2;">
 	</div>
-	<img src="images/gtu.png" style="width: 6%;position:absolute;top:10%;left:1%;z-index: 3;box-sizing: border-box;">
-	<img src="images/vgec.png" style="width: 6%;position:absolute;top:10%;right:1%;z-index: 3;box-sizing: border-box;">
-	<img src="images/web logo part 2.png" style="width: 10%;position:absolute;top:2%;left:50%;transform:translateX(-50%); z-index: 3;background-color: #0D5002;border-radius: 50%;padding: 0.2%;box-sizing: border-box; border-left:2px #B3D6CB outset">
 
-	<div style="width: 102%;position: fixed;bottom:0;left:-1%;background:url('footer_black.svg');height:10%;background-repeat: no-repeat;background-size: cover;z-index: 1;">
-	</div>
-	<p class="copyright" style="color: #fff;position: absolute;z-index: 3; bottom:0;left:1%;text-transform: uppercase;"> &copy Vishwakarma Government Enginerring College</p>
-	<p class="copyright" style="color: #fff;position: absolute;z-index: 3; bottom:0;right:1%;text-transform: uppercase;"> Hosting Partner : LMCP</p>
+	<!-- gtu -->
+	<img src="images/gtu.png" style="width: 4%;position:fixed;top:10%;left:1%;z-index: 3;box-sizing: border-box;">
+
+	<!-- vgec -->
+	<img src="images/vgec.png" style="width: 4%;position:fixed;top:10%;right:1%;z-index: 3;box-sizing: border-box;">
+
 	
 	<!-- TECHFEST LOGO -->
 	<img src="images/web logo part 2.png" style="width: 8%;position:fixed;top:4%;left:50%;transform:translateX(-50%); z-index: 3;background-color: #0D5002;border-radius: 50%;padding: 0.2%;box-sizing: border-box; ">
@@ -170,20 +173,14 @@
             section : "section",
           });
         });
-      </script>
-      <script type="text/javascript" src="js/C3counter.js"></script>
-<script type="text/javascript">
-						// Default options 
-						var currentDate = new Date();
-						
+    </script>
+    <script type="text/javascript" src="js/C3counter.js"></script>
+	<script type="text/javascript">
+		// Default options 
+		var currentDate = new Date();				
 		var futureDate  = new Date("2019-03-29");
-
 		var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 			C3Counter("counter", { startTime :diff });
-					</script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script src="js/particals.js"></script>
-<script src="js/custom.js"></script>
-<script type="text/javascript" src="js/particals-setting.js"></script>
+	</script>
 </body>
 </html>
