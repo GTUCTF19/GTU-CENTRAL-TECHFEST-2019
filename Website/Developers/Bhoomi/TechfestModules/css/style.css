@@ -1,0 +1,148 @@
+/* Main CSS */
+
+body {
+  background: #fff;
+  color: #2f3138;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #f82249;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #f8234a;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #0e1b4d;
+}
+
+.main-page {
+  margin-top: 70px;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+/* Prelaoder */
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url("../img/preloader.svg") no-repeat center center;
+}
+
+/* Sections Header
+--------------------------------*/
+
+   .section-header {
+      margin-bottom: 60px;
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    .section-header::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 60px;
+      height: 5px;
+      background: #f82249;
+      bottom: 0;
+      left: calc(50% - 25px);
+    }
+
+    .section-header h2 {
+      font-size: 36px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .section-header p {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 500;
+      color: #9195a2;
+    }
+
+    .section-with-bg {
+      background-color: #f6f7fd;
+    }   
+
+
+
+    #eventstwo {
+      padding: 60px 0;
+    }
+
+    #shadow {
+      border: 1px solid;
+      padding: 10px;
+      box-shadow: 5px 10px 18px #888888;
+    }
+
+    #eventstwo .eventtwo {
+      border: 1px solid #e0e5fa;
+      background: #fff;
+      margin-bottom: 50px;
+      padding: 2px;
+    }
+
+    #eventstwo .eventtwo:hover .eventtwo-img img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    #eventstwo .eventtwo-img {
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    #eventstwo .eventtwo-img img {
+      transition: 0.3s ease-in-out; 
+    }
+
+    #eventstwo h3 {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 20px;
+      padding: 0 10px;
+    }
+
+    #eventstwo a {
+      color: #152b79;
+    }
+
+    #eventstwo a:hover {
+      color: #f82249;
+    }

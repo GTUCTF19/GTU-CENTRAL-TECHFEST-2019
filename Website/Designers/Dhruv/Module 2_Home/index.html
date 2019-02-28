@@ -3,6 +3,13 @@
 <head>
 	<title></title>
 	<meta name="viewport" content="width=960">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -16,54 +23,214 @@
 </head>
 <body>
 
+	<!-- particals -->
+	<div id="particles-js"><div class="example-container svg-animation" style="width: 30%; height: 37%; align: center;">
+	<svg class="ralph" version="1.1" align="center" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480.6 468.3" enable-background="new 0 0 480.6 468.3" xml:space="preserve">
+      <g>
+        <path class="ralph__body" fill="#000" d="M202.8,192.7h-5.2v36.6h0c1.7,2.1,2.8,4.7,2.8,7.6c0,3.6-1.6,6.8-4.2,9l-3.2-3.2c1.8-1.3,2.9-3.4,2.9-5.8
+          c0-4-3.3-7.3-7.3-7.3s-7.3,3.3-7.3,7.3c0,2.4,1.1,4.5,2.9,5.8l-3.2,3.2c-2.5-2.2-4.2-5.4-4.2-9c0-2.9,1.1-5.6,2.8-7.6v-57
+          c0.1-2.2,1.9-4,4.1-4l104.5,0c2.2,0,4,1.8,4.1,4v57c1.8,2.1,2.8,4.7,2.8,7.6c0,3.6-1.6,6.8-4.2,9l-3.2-3.2
+          c1.7-1.3,2.9-3.4,2.9-5.8c0-4-3.3-7.3-7.3-7.3s-7.3,3.3-7.3,7.3c0,2.4,1.1,4.5,2.9,5.8l-3.2,3.2c-2.6-2.2-4.2-5.4-4.2-9
+          c0-2.9,1.1-5.6,2.8-7.6h0v-36.6h-5.2v77.2l3.5,2v6.3h-35v-6.3l3.5-2h0v-23.4h-10.4v23.4l3.5,2v6.3l-34.9,0.1v-6.3l3.4-2
+          L202.8,192.7z"></path>
+    	  <g>
+          <g>
+            <path class="ralph__wifi-bar" fill="#000" d="M236,109.1c7.3,0,13.8,2.6,17.9,6.5l3.2-4.6c-5.1-4.5-12.6-7.4-21.1-7.4l0,0c-8.5,0-16.1,2.9-21.1,7.4
+                l3.2,4.6C222.2,111.7,228.8,109.1,236,109.1"></path>
+            <path class="ralph__wifi-bar" fill="#000" d="M236.4,97.5c7.9,0,15.3,2.3,20.8,6.5c1.1,0.8,2.1,1.7,3,2.7l3.2-4.6c-6.2-6.1-16-10.1-27-10.1l0,0
+                c-11.3,0-21.3,4.1-27.5,10.5l3.2,4.6c1-1.1,2.1-2.2,3.4-3.2C221.1,99.7,228.5,97.5,236.4,97.5"></path>
+            <path class="ralph__wifi-bar" fill="#000" d="M236,86.3c12.6,0,23.7,4.6,30.3,11.6l3.2-4.5c-7.7-7.6-19.9-12.5-33.5-12.5l0,0
+                c-13.7,0-25.8,4.9-33.5,12.6l3.2,4.5C212.3,90.9,223.4,86.3,236,86.3"></path>
+          </g>
+          <g class="ralph__head">
+            <path fill="#000" d="M262,121.5h-53.1c-2.2,0-4,1.8-4,4v34.6c0,2.2,1.8,4,4,4H262c2.2,0,4-1.8,4-4v-34.6
+                C266,123.3,264.2,121.5,262,121.5z M221.9,146.9c-3.7,0-6.8-3-6.8-6.8c0-3.7,3-6.8,6.8-6.8c3.7,0,6.8,3,6.8,6.8
+                C228.7,143.9,225.7,146.9,221.9,146.9z M249.1,146.9c-3.7,0-6.8-3-6.8-6.8c0-3.7,3-6.8,6.8-6.8c3.7,0,6.8,3,6.8,6.8
+                C255.9,143.9,252.8,146.9,249.1,146.9z"></path>
+            <path fill="#000" d="M225.4,140.1c0,1.9-1.5,3.5-3.5,3.5c-1.9,0-3.5-1.6-3.5-3.5c0-1.9,1.6-3.5,3.5-3.5
+                C223.9,136.7,225.4,138.2,225.4,140.1z"></path>
+            <path fill="#000" d="M252.6,140.1c0,1.9-1.6,3.5-3.5,3.5c-1.9,0-3.5-1.6-3.5-3.5c0-1.9,1.5-3.5,3.5-3.5
+                C251,136.7,252.6,138.2,252.6,140.1z"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div></div>
+
+	<!-- header -->
 	<div style="width: 102%;position: fixed;top:-4%;left:-1%;right:-1%;background:url('Design (5).svg');height:11vw;background-repeat: no-repeat;background-size: cover;z-index: 2;">
 	</div>
-	<img src="images/gtu.png" style="width: 5%;position:absolute;top:10%;left:1%;z-index: 3;box-sizing: border-box;">
-	<img src="images/vgec.png" style="width: 5%;position:absolute;top:10%;right:1%;z-index: 3;box-sizing: border-box;">
-	<img src="images/web logo part 2.png" style="width: 10%;position:absolute;top:2%;left:50%;transform:translateX(-50%); z-index: 3;background-color: #0D5002;border-radius: 50%;padding: 0.2%;box-sizing: border-box; border-left:2px #B3D6CB outset">
-	<img src="drone.svg" style="width: 25%;position:absolute;top:-8%;left:28%;transform:translateX(-50%); z-index: 3;">
-	<div class="middle">
-		<div class="inner">
-			<h1 style="width: 100%;">GTU TechFest'19</h1>
-			<h3 style="width: 100%;">Hosted by Vishwakarma Engineering collage</h3>
+
+	<!-- gtu -->
+	<img src="images/gtu.png" style="width: 4%;position:fixed;top:10%;left:1%;z-index: 3;box-sizing: border-box;">
+
+	<!-- vgec -->
+	<img src="images/vgec.png" style="width: 4%;position:fixed;top:10%;right:1%;z-index: 3;box-sizing: border-box;">
+
+	
+	<!-- TECHFEST LOGO -->
+	<img src="images/web logo part 2.png" style="width: 8%;position:fixed;top:4%;left:50%;transform:translateX(-50%); z-index: 3;background-color: #0D5002;border-radius: 50%;padding: 0.2%;box-sizing: border-box; ">
+
+	<!-- navbar -->
+	<nav class="navbar custom-navbar fixed-top navbar-expand-sm">
+			 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   			 <span class="navbar-toggler-icon"></span>
+ 		 </button>
+
+	  <!-- Links -->
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <ul class="navbar-nav mr-auto">
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Home</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Events</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">location</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">schedule</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Registration Portal</a>
+	    </li>
+	  </ul>
+	</div>
+	  <ul class="navbar-nav my-2 my-lg-0">
+	    <li class="nav-item">
+	      <a class="nav-link" href="#overview">About us</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">contact us</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">location</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Registration Portal</a>
+	    </li>
+	  </ul>
+
+	</nav>
+
+	<!-- homepage -->
+	<section id="homepage">
+		<div class="middle">
+    		<div class="inner">
+    			<h4 class="gtu">GTU Central TechFest'19</h4>
+    			<p class="hostedby">
+                    Hosted by Vishwakarma Government Engineering College
+                </p>
+    		</div>
+    	</div>
+	</section>
+
+	<!-- overview -->
+	<section id="overview">
+		<div class="middle">
+    		<div class="inner container"><br>
+			<div class="row">
+		      
+		        <div class="col-6">
+		          <h1 class="title-widget">When</h1>
+		          <h5>28-29 March</h5>
+		        </div>
+		        <div class="col-6">
+		          <h1 class="title-widget">Where</h1>
+		          <h5>At Vishwakarma Government Engineering College</h5>
+		        </div>
+		      	
+		    </div>
+		    <br><br><br>
+		    <div class="row">
+		      <div class="wow fadeInUp col-12 col-12" data-wow-delay="0.6s">
+		        <h1 class="title-widget">OverView</h1>
+		        <br>
+		        <p>The Central TechFest 2k18 is annual science n tech carnival of GTU. Techfest2k18 summons all the unconventional and ingenious Engineers to celebrate their freshness in our fair. Not just a fiesta of engineering know-hows, but a Platform to ignite and foster ideas dug deep inside bright brains from across the widely spread boundaries of GTU throughout Gujarat.
+				The sole motto of Techfest 2k18 is to transform potential ideas to minted ones, and realising the need to reform and transfigure the present day scenario in Gujarat, develop those ideas into crusader of better and improved lives of millions, earning higher and higher dignity for the state.
+				Techfest 2k18 also strives to bridge the gap between industry and academiA, by encompassing
+				competitions
+				Expert talks
+				Exhibition
+				Workshops
+				Tech and non tech events
+				Startup Fair
+				Tf2k18 aims to launch a wave of bright minds and path breaking solutions to sustainable future.</p>
+		      </div>
+		  	</div>
+		  </div>
+		</div>
+	</section>
+
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="mr-auto" style="width: 102%;position: fixed;bottom:0;left:-1%;background:url('footer_black1.2.svg');height:9%;background-repeat: no-repeat;background-size: cover;z-index: 3;">
+			<p class="copyright" style="color: #fff;position: fixed;z-index: 3; bottom:0.5%;left:1%;text-transform: uppercase;"> &copy Vishwakarma Government Enginerring College</p>
+			<p style="color: #fff;position: fixed;z-index: 3; bottom:0.5%;right:13%;text-transform: uppercase;"> Hosting Partner : LMCP</p>
+			<img src="images/LMCP-Logo.png" style="position: fixed;z-index: 3;width: 2.5%; bottom:1%;right:10%;">
+			<button class="btn-dark" style="color: #fff;position: fixed;z-index: 3; bottom:2%;right:1%;text-transform: uppercase;"> OUR TEAM</button>
 		</div>
 	</div>
-	<section>
 
-	</section>
+	<!-- social -->
+	<ul class="social">
+	  <li>
+	    <a href="#" class="facebook"><span>Facebook</span><i class="fa fa-facebook"></i></a>
+	  </li>
+	  <li>
+	    <a href="#" class="insta"><span>Instagram</span><i class="fa fa-instagram"></i></a>
+	  </li>
+	  <li>
+	    <a href="#" class="twitter"><span>Twitter</span><i class="fa fa-twitter"></i></a>
+	  </li>
+	</ul>
 
-	<section>
-
-	</section>
-
-	<div class="homepage-footer">
-		<div style="width: 102%;position: fixed;bottom:0;left:-1%;background:url('footer_black1.2.svg');height:8%;background-repeat: no-repeat;background-size: cover;z-index: 1;">
-					<a style="margin-left: 10%;" href="">Link1</a>
-					<a style="margin-left: 2%;" href="">Link2</a>
-					<a style="margin-left: 2%;" href="">Link3</a>
-					<a style="margin-left: 55%;" href="">Link4</a>
-					<a style="margin-left: 2%;" href="">Link5</a>
-					<a style="margin-left: 2%;" href="">Link6</a>
+	<!-- scroll -->
+	<div class="scroll">
+	  <div class="chevron"></div>
+	  <div class="chevron"></div>
+	  <div class="chevron"></div>
 	</div>
-	</div>
-	<!-- <div style="width: 102%;position: fixed;bottom:0;left:-1%;background:url('footer_black1.2.svg');height:8%;background-repeat: no-repeat;background-size: cover;z-index: 1;">
-	</div>
-	<p class="copyright" style="color: #fff;position: absolute;z-index: 3; bottom:0;left:1%;text-transform: uppercase;"><a class="pad" href="">Hi everyone</a><a class="pad" href="">Hi everyone</a><a class="pad" href="">Hi everyone</a></p>
-	<p class="copyright" style="color: #fff;position: absolute;z-index: 3; bottom:0;right:1%;text-transform: uppercase;"><a class="pad" href="">Hi everyone</a><a class="pad" href="">Hi everyone</a><a class="pad" href="">Hi everyone</a></p> -->
 
+	<!-- countdown -->
+	<div id="counter"></div>
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script src="js/particals.js"></script>
-<script src="js/custom.js"></script>
-<script type="text/javascript" src="js/particals-setting.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 
-<script src="js/jquery scrollify.js"></script>
-<script>
+	<script type="text/javascript">
+  $( document ).ready(function() {
+  	$(".ralph__background").addClass("back");
+    $(".ralph__body").addClass("body");
+    $(".ralph__head").addClass("head");
+    $(".ralph__wifi-bar").addClass("wifi-bar");
+    $(".ralph__wifi-bar:nth-child(1)").addClass("ralph_wifi-bar1");
+    $(".ralph__wifi-bar:nth-child(2)").addClass("ralph__wifi-bar2");
+    $(".ralph__wifi-bar:nth-child(3)").addClass("ralph__wifi-bar3");
+  });
+  $("#test p").addClass("load");
+</script>
+
+	<script src="js/particals.js"></script>
+	<script src="js/custom.js"></script>
+	<script type="text/javascript" src="js/particals-setting.js"></script>
+	<script src="js/jquery scrollify.js"></script>
+	<script>
         $(function() {
           $.scrollify({
             section : "section",
           });
         });
-      </script>
+    </script>
+    <script type="text/javascript" src="js/C3counter.js"></script>
+	<script type="text/javascript">
+		// Default options 
+		var currentDate = new Date();				
+		var futureDate  = new Date("2019-03-29");
+		var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+			C3Counter("counter", { startTime :diff });
+	</script>
 </body>
 </html>
