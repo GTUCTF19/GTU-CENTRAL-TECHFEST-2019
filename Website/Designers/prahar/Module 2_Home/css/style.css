@@ -1,3 +1,6 @@
+html{
+    cursor:url(cursor/select.cur),auto;
+  }
 body {
     background: gray;
 background-image: url("https://cdn2.vectorstock.com/i/1000x1000/57/91/abstract-background-technology-electronic-vector-21165791.jpg");
