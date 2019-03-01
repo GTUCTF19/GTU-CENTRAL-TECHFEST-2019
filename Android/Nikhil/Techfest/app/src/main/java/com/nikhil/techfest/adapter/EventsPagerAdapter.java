@@ -22,6 +22,9 @@ public class EventsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int i) {
         EventsFragment fragment = new EventsFragment();
+        Bundle bundle = new Bundle();
+        bundle.putInt("index",i);
+        fragment.setArguments(bundle);
         return fragment ;
     }
 
