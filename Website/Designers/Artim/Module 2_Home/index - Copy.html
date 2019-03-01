@@ -27,7 +27,7 @@
 	<!-- particals -->
 	<div id="particles-js">
 		<!-- Navbar  mobile bootstrap-->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark hidden" style="position:relative; ">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark hidden" style="position:relative;">
 		<a class="navbar-brand" href="#">GTU TechFest'19</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -41,46 +41,44 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#">Events</a>
 				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Dropdown
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Something else here</a>
-					</div>
-				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Registration portal</a>
 				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						More
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Schedule</a>
+						<a class="dropdown-item" href="#">Location</a>
+						<a class="dropdown-item" href="#">Contact Us</a>
+						<a class="dropdown-item" href="#">About Us</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Our Team</a>
+					</div>
+				</li>
 			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			</form>
 		</div>
 	</nav>
 	</div>
 
 	<!-- header -->
-	<div class="header responsive" style=" width: 102%;position: fixed;top:-4%;left:-1%;right:-1%;background:url('Design (5).svg');height:11vw;background-repeat: no-repeat;background-size: cover;z-index: 2;">
+	<div class="header responsive" style=" display: none; width: 102%;position: fixed;top:-4%;left:-1%;right:-1%;background:url('Design (5).svg');height:11vw;background-repeat: no-repeat;background-size: cover;z-index: 2;">
 	</div>
 
 	<!-- gtu -->
-	<img src="images/gtu.png" style="width: 4%;position:fixed;top:10%;left:1%;z-index: 3;box-sizing: border-box;">
+	<img src="images/gtu.png" style="display: none;width: 4%;position:fixed;top:10%;left:1%;z-index: 3;box-sizing: border-box;">
 
 	<!-- vgec -->
-	<img src="images/vgec.png" style="width: 4%;position:fixed;top:10%;right:1%;z-index: 3;box-sizing: border-box;">
+	<img src="images/vgec.png" style="display: none;width: 4%;position:fixed;top:10%;right:1%;z-index: 3;box-sizing: border-box;">
 
 
 	<!-- TECHFEST LOGO -->
-	<img src="images/web logo part 2.png" style="width: 8%;position:fixed;top:4%;left:50%;transform:translateX(-50%); z-index: 3;background-color: #0D5002;border-radius: 50%;padding: 0.2%;box-sizing: border-box; ">
+	<img src="images/web logo part 2.png" style="display: none; width: 8%;position:fixed;top:4%;left:50%;transform:translateX(-50%); z-index: 3;background-color: #0D5002;border-radius: 50%;padding: 0.2%;box-sizing: border-box; ">
 
 
 	<!-- navbar -->
-	<nav class="navbar custom-navbar fixed-top navbar-expand-sm responsive" style="font-size: 2vw!important;">
+	<nav class="navbar custom-navbar fixed-top navbar-expand-sm responsive" style="font-size: 2vw!important;display: none;">
 
 	  <!-- Links -->
 		<ul class="navbar-nav mr-auto" >
@@ -168,7 +166,7 @@
 
 
 	<!-- footer -->
-	<div class="footer responsive">
+	<div class="footer responsive "style="display: none;">
 		<div class="mr-auto footer_svg" style="width: 102%;position: fixed;bottom:0;left:-1%;background:url('footer_black1.2.svg');height:9%;background-repeat: no-repeat;background-size: cover;z-index: 3;font-size: 1vw;">
 			<p class="copyright" style="color: #fff;position: fixed;z-index: 3; bottom:0.5%;left:1%;text-transform: uppercase; font-size: 1vw;"> &copy Vishwakarma Government Enginerring College</p>
 			<p class="LMCP"style="color: #fff;position: fixed;z-index: 3; bottom:0.5%;right:13%;text-transform: uppercase;"> Hosting Partner : LMCP</p>
@@ -178,7 +176,7 @@
 	</div>
 
 	<!-- social -->
-	<ul class="social responsive">
+	<ul class="social responsive" style="transform: scale();">
 	  <li>
 	    <a href="#" class="facebook"><span>Facebook</span><i class="fa fa-facebook"></i></a>
 	  </li>
@@ -198,7 +196,7 @@
 	</div>
 
 	<!-- countdown -->
-	<div id="counter"></div>
+	<div id="counter" style="display: none;"></div>
 
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -222,8 +220,8 @@
 		var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 			C3Counter("counter", { startTime :diff });
 	</script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
