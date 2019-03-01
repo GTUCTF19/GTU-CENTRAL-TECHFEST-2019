@@ -1,23 +1,25 @@
 package com.nikhil.techfest.provider;
 
+import android.content.Context;
+import android.content.res.Resources;
+
+import com.nikhil.techfest.R;
+
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class EventTypesProvider {
 
-    private static String[] getTypes() {
+    private static String[] getTypes(Context context) {
         return new String[]{
-                "Event Type 1",
-                "Event Type 2",
-                "Event Type 3",
-                "Event Type 4",
-                "Event Type 5"
+                context.getString(R.string.event_types_tech),
+                context.getString(R.string.event_types_non_tech),
+                context.getString(R.string.event_types_work)
         };
     }
 
-    public static ArrayList<String> getItems() {
-        ArrayList<String> itemList = new ArrayList<>(Arrays.asList(getTypes()));
+    public static ArrayList<String> getItems(Context context) {
+        ArrayList<String> itemList = new ArrayList<>(Arrays.asList(getTypes(context)));
         return itemList;
     }
 }

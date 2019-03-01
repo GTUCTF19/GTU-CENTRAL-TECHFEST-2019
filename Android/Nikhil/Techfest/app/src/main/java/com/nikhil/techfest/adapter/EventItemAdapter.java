@@ -1,6 +1,7 @@
 package com.nikhil.techfest.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.nikhil.techfest.R;
+import com.nikhil.techfest.main.EventDetailsActivty;
 import com.nikhil.techfest.provider.EventItemProvider;
 
 import java.util.List;
@@ -78,6 +80,8 @@ public class EventItemAdapter extends RecyclerView.Adapter<EventItemAdapter.View
         @Override
         public void onClick(View v) {
             Toast.makeText(v.getContext(), current_item.getEventName(), Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(v.getContext(), EventDetailsActivty.class);
+            v.getContext().startActivity(intent);
         }
     }
 }

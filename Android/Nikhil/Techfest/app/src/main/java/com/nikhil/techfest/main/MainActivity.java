@@ -56,13 +56,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void setUpEventViewPager() {
         ViewPager viewPager = findViewById(R.id.vp_event);
-        EventsPagerAdapter adapter = new EventsPagerAdapter(getSupportFragmentManager(), EventTypesProvider.getItems());
+        EventsPagerAdapter adapter = new EventsPagerAdapter(getSupportFragmentManager(), EventTypesProvider.getItems(getApplicationContext()));
         viewPager.setAdapter(adapter);
+//        viewPager.setBackgroundResource(R.drawable.back);
+//        viewPager.getBackground().setAlpha(20);
 
         TabLayout tabLayout =findViewById(R.id.tl_event);
         tabLayout.setupWithViewPager(viewPager);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             tabLayout.setElevation(5*getResources().getDisplayMetrics().density);
         }
+        viewPager.setCurrentItem(tabLayout.getSelectedTabPosition());
     }
 }
