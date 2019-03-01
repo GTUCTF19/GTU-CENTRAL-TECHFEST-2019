@@ -16,15 +16,18 @@
       $result = mysqli_query($conn,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       $count = mysqli_num_rows($result);
-		
-      if($count == 1) {
+       
+       
+      if($count == 1) 
+      {
         
          $_SESSION['log'] = $user;
-         
-         header("location:event_form.php");
-      }else {
+          $_SESSION['id']=$row['u_id'];
+          header("location:event_form.php");
+      }
+       else {
           
-?>
+        ?>
             <script>
 			window.onload=function()
 			{

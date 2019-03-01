@@ -14,6 +14,7 @@
 		window.location="login.php";
 	</script>
     <?php
+       
    }
 
 ?>
@@ -206,13 +207,16 @@
 		<th><center><font  size='4' >Manager Id</font></center></th>
 		<th><center><font  size='4'>Manager Name</font></center></th>
 		<th><center><font  size='4'>Phone no.</font></center></th>
+        <th><center><font  size='4'>Event</font></center></th>
         <th><center><font  size='4'>Status</font></center></th>
         <th colspan=2><center><font  size='4'>Action</font></center></th>
         </tr>
        
         <?php
-	
-        $disp=mysqli_query($conn,"select * from manager");
+        
+        $cood=$_SESSION['id'];
+        $sql="select * from manager where manager.event='".$cood."'";
+        $disp=mysqli_query($conn,$sql);
 			
 	   while($row=mysqli_fetch_array($disp))
 			{
@@ -220,6 +224,7 @@
 				echo "<td><center><font  size='4' >".$row['id']."</font></center></td>";
 				echo "<td><center><font  size='4' >".$row['name']."</font></center></td>";
 				echo "<td><center><font  size='4' >".$row['phone']."</font></center></td>";
+                echo "<td><center><font  size='4' >".$row['event']."</font></center></td>";
                 echo "<td><center><font  size='4' >".$row['action']."</font></center></td>";
                 echo "<td><center><a href='apman.php?id=".$row['id']."'><img src='images/approve.png' height='30' width='30'></a>"; echo "  "; echo" <a href='removeman.php?id=".$row['id']."'><img src='images/cross.png' height='25' width='25'></a></center></td>";
 				echo "</tr>";
