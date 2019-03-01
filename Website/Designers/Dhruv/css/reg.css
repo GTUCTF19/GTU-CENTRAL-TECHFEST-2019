@@ -17,7 +17,7 @@ h1 {
 
 /*The central box for the Introduction*/
 .box {
-    margin: 10% 30% 10% 30%;
+    margin: 7% 30% 10% 30%;
     
 }
 
@@ -52,7 +52,7 @@ span {
  
 /*The central box of registration 1 page*/ 
 .box1  {
-  margin: 10% 17% 10% 17%;
+  margin: 7% 17% 10% 17%;
   padding-bottom: 3%; 
   background-color: lightgrey;
   box-shadow: 10px 10px 5px darkgrey;
@@ -70,7 +70,9 @@ span {
   margin-top: 5%;
 }
 
-
+.arrange3 {
+  margin-left: 3%;
+}
 
 
 /*The central box of registration 2 page*/

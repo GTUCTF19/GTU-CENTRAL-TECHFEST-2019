@@ -340,14 +340,11 @@ background-image: url("https://cdn2.vectorstock.com/i/1000x1000/57/91/abstract-b
 }
 
 
-
-
-
  /*! CSS Used from: https://thoughtbot.com/blog/assets/application-e00fe12a5e60e5f6a241ba4403608b3a886b47f66cd9c9de78bcfe58ad98ad78.css ; media=all */
-@media all{
-*,*::after,*::before{box-sizing:inherit;}
+/*@media all{
+*,*::after,*::before{box-sizing:inherit;}*/
 svg:not(:root){overflow:hidden;}
-}
+/*}*/
 .back {
   -webkit-animation:grow 0.5s ease-out forwards;animation:grow 0.5s ease-out forwards;
 }
@@ -396,34 +393,25 @@ svg:not(:root){overflow:hidden;}
     padding-right: 50px;
   }
   .example-container{
-      transform: translate(225%,90%);
+      transform: translate(570%,170%);
   }
 
-  /*@media (min-width: 300px) and (max-width: 450px)
-  {
-  	.Header{
-  		top: 100px!important;
-  	}
-  }
- @media (min-width: 800px) and (max-width: 1000px)
-  {
-  	.Header{
-  		height: 8vw!important;
-  		top:-2%!important;
-	  	}
-  }*/
-  .atv {
+ .atv {
   	width: 7%; transform: translate(-100%,816%);  /*animation-delay:2s;*/
   	animation:fadein 4s;
-animation-timing-function:linear;
-animation-delay:1s;
-animation-fill-mode:forwards, none;
-animation-iteration-count: 1;
--webkit-animation-iteration-count: 1;
--webkit-animation:fadein 4s;
--webkit-animation-timing-function:linear;
--webkit-animation-delay:1s;
--webkit-animation-fill-mode: forwards, none;
+	animation-timing-function:linear;
+	animation-delay:1s;
+	animation-fill-mode:forwards, none;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation:fadein 4s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:1s;
+	-webkit-animation-fill-mode: forwards, none;
+  }
+
+  .hidden {
+  	display: none;
   }
 
    @keyframes fadein {
@@ -433,4 +421,28 @@ animation-iteration-count: 1;
    	80%{ transform: translate(270%,816%); }
    	90%{ transform: translate(290%,816%); }*/
    	100%{ transform: translate(300%,818%);}
+   }
+
+  @media (max-width: 800px)
+   {
+   	.hidden {
+   		display: contents;
+
+   		
+   	}
+   	.custom-navbar{
+   		display: none;
+   	}
+   	.Header {
+   		display: none;
+   	}
+   	.example-container {
+   		display: none;
+   	}
+   .atv-image{
+   		display: none;
+   	}
+   	#counter {
+   		display: none;
+   	}
    }

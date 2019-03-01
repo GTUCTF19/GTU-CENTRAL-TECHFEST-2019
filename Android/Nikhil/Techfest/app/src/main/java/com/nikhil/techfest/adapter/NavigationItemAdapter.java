@@ -19,7 +19,7 @@ import android.widget.Toast;
 import com.nikhil.techfest.R;
 import com.nikhil.techfest.item.NavigationDrawerImage;
 import com.nikhil.techfest.item.NavigationDrawerItem;
-import com.nikhil.techfest.main.EventsActivity;
+import com.nikhil.techfest.main.ScheduleActivity;
 
 import java.util.List;
 
@@ -153,10 +153,9 @@ public class NavigationItemAdapter extends RecyclerView.Adapter<NavigationItemAd
         @Override
         public void onClick(View v) {
 
-            if(current.getTitle().equals("Events")) {
-                v.getContext().startActivity(new Intent(v.getContext(), EventsActivity.class));
+            if(current.getTitle().equals(v.getContext().getString(R.string.nav_drawer_schedule))) {
+                v.getContext().startActivity(new Intent(v.getContext(), ScheduleActivity.class));
             }
-
             Toast.makeText(v.getContext(), current.getTitle(), Toast.LENGTH_SHORT).show();
             toolbar.setTitle(current.getTitle());
             drawerLayout.closeDrawer(Gravity.START);
