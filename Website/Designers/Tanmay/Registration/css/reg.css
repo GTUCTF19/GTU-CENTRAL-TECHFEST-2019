@@ -85,6 +85,9 @@ body{
    font-family: sans-serif;
 }
 
+.bgimg {
+    background-image: url('background.jpg');
+}
 
 /*.register{
   background-size: cover;
@@ -168,3 +171,12 @@ border-radius:10px!important;
     background: #0062cc;
     color: #fff;
 }
+.hidden2{
+      display: none;
+    }
+    .hidden3 {
+      display: none;
+    }
+    .hidden4 {
+      display: none;
+    }
