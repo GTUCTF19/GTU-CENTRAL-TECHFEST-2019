@@ -7,15 +7,6 @@
    $error = null;
     session_start();
 
-   if(!isset($_SESSION['log']))
-	{
-	?>
-    <script>
-		window.location="login.php";
-	</script>
-    <?php
-   }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
