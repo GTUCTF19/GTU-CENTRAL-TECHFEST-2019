@@ -2,25 +2,12 @@
     define('SERVER', 'localhost');
     define('USERNAME', 'root');
     define('PASSWORD', '');
-    define('DB', 'techfest');
+    define('DB', 'techfest1');
     $conn = mysqli_connect(SERVER,USERNAME,PASSWORD,DB);
-    $records=[];
     $i=0;
     if(! $conn ) {
         die('Could not connect: ' . mysqli_error());
     }
-    // echo 'Connected successfully<br>';
-    $sql = 'SELECT e_name FROM robotics';
-    $result = mysqli_query($conn, $sql);
-    
-    if (mysqli_num_rows($result) > 0) {
-        while($row = mysqli_fetch_assoc($result)) {  
-            $records[$i] = $row["e_name"];
-            $i=$i+1;
-        }
-    } else { /*echo "0 results";*/ }
-    $len = count($records);
-    mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
@@ -44,16 +31,22 @@
             </div>
             <div class="row">
                 <?php
-                    for($i=0; $i<$len; $i++) {
-                      echo '<div class="col-lg-3 col-md-6">';
-                        echo '<div class="eventtwo" id="shadow">';
-                          echo '<div class="eventtwo-img">';
-                            echo '<img src="img/hotels/'.(string)$i.'.jpg" alt="Event 1" class="img-fluid">';
-                          echo '</div>';
-                          echo '<h3><a href="speaker-details.html"><center>' . $records[$i] . '</center></a></h3>';
-                        echo '</div>';
-                      echo '</div>';
-                    }
+                    $sql = 'SELECT e_name FROM robotics';
+                    $result = mysqli_query($conn, $sql);
+                    if (mysqli_num_rows($result) > 0) {
+                        while($row = mysqli_fetch_assoc($result)) {  
+                            echo '<div class="col-lg-3 col-md-6">';
+                                echo '<div class="eventtwo" id="shadow">';
+                                  echo '<div class="eventtwo-img">';
+                                    echo '<img src="img/hotels/'.(string)$i.'.jpg" alt="Event 1" class="img-fluid">';
+                                  echo '</div>';
+                                  echo '<h3><a href="roboticsdescription.php?e_name='.$row["e_name"].'"><center>' . $row["e_name"] . '</center></a></h3>';
+                                echo '</div>';
+                              echo '</div>';
+                            $i=$i+1;  
+                        }
+                    } else { /*echo "0 results";*/ }
+                    mysqli_close($conn);
                 ?>
             </div>
           </div>
