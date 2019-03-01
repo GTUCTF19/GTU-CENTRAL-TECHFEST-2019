@@ -16,16 +16,17 @@ import com.nikhil.techfest.provider.EventItemProvider;
 
 public class EventsFragment extends Fragment {
 
-    public EventsFragment() {
-        // Required empty public constructor
-    }
+    int position;
+    public EventsFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_events, container, false);
-
+        Bundle bundle = getArguments();
+        if (bundle != null) {
+            position=bundle.getInt("index");
+        }
         setUpRecyclerView(view);
 
         return view;
@@ -33,13 +34,12 @@ public class EventsFragment extends Fragment {
 
     private void setUpRecyclerView(View view) {
         RecyclerView recyclerView = view.findViewById(R.id.rv_events);
-        EventItemAdapter itemAdapter = new EventItemAdapter(view.getContext(), EventItemProvider.getItems());
+        EventItemAdapter itemAdapter = new EventItemAdapter(view.getContext(), EventItemProvider.getItems(view.getContext(), position));
         recyclerView.setAdapter(itemAdapter);
 
-        GridLayoutManager layoutManager = new GridLayoutManager(view.getContext(), 3);
+        GridLayoutManager layoutManager = new GridLayoutManager(view.getContext(), 2);
         layoutManager.setOrientation(GridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
     }
-
 }

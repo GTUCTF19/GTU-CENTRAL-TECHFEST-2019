@@ -1,3 +1,6 @@
+html{
+    cursor:url(cursor/select.cur),auto;
+  }
 body {
     background: gray;
 background-image: url("https://cdn2.vectorstock.com/i/1000x1000/57/91/abstract-background-technology-electronic-vector-21165791.jpg");
@@ -336,6 +339,11 @@ background-image: url("https://cdn2.vectorstock.com/i/1000x1000/57/91/abstract-b
   }
 }
 
+
+
+
+
+ /*! CSS Used from: https://thoughtbot.com/blog/assets/application-e00fe12a5e60e5f6a241ba4403608b3a886b47f66cd9c9de78bcfe58ad98ad78.css ; media=all */
 @media all{
 *,*::after,*::before{box-sizing:inherit;}
 svg:not(:root){overflow:hidden;}
@@ -345,7 +353,8 @@ svg:not(:root){overflow:hidden;}
 }
 
 .body {
-  -webkit-animation:moveInUp 0.5s ease-out forwards;animation:moveInUp 0.5s ease-out forwards;-webkit-animation-delay:0.2s;animation-delay:0.2s;
+  -webkit-animation:moveInUp 0
+  .5s ease-out forwards;animation:moveInUp 0.5s ease-out forwards;-webkit-animation-delay:0.2s;animation-delay:0.2s;
 }
 
 .head {
@@ -369,7 +378,7 @@ svg:not(:root){overflow:hidden;}
 .example-container{margin:1rem auto 1.5rem;text-align:center;width:90%;}
 
 .example-container.svg-animation{height:200px;overflow:hidden;position:relative;}
-.example-container.svg-animation::after{position:absolute;right:0;bottom:0;background:rgba(181,181,192,0.5);border:solid #b5b5c0;border-radius:2px 0 0 0;border-width:1px 0 0 1px;;display:block;font-size:12px;padding:0.25em 1em;}
+.example-container.svg-animation::after{position:absolute;z-index:3;right:0;bottom:0;background:rgba(181,181,192,0.5);border:solid #b5b5c0;border-radius:2px 0 0 0;border-width:1px 0 0 1px;;display:block;font-size:12px;padding:0.25em 1em;}
 .ralph{height:280px;width:280px;margin:-14px auto 0;}
 .ralph__background,.ralph__body,.ralph__head,.ralph__wifi-bar{opacity:0;-webkit-transform-origin:50%;transform-origin:50%;}
 }
@@ -388,5 +397,26 @@ svg:not(:root){overflow:hidden;}
     padding-right: 50px;
   }
   .example-container{
-      transform: translate(550px,500px);
+
+    position: fixed;
+    z-index: 3;
+    bottom:10%;
+    right:-6%;
+
+
+      transform: translate(225%,150%);
+  }
+
+  @media (min-width: 100px) and (max-width: 300px)
+  {
+    #topper {
+      top: 0px;
+    }
+    .inner {
+      margin-top: 100%;
+    }
+    .footer svg {
+      bottom: -5%;
+    }
+
   }

@@ -23,7 +23,7 @@ public class NavigationDrawerItemProvider {
     private static String[] getTitles(Context context) {
         return new String[] {
                 context.getString(R.string.nav_drawer_home),
-                context.getString(R.string.nav_drawer_events),
+                context.getString(R.string.nav_drawer_schedule),
                 context.getString(R.string.nav_drawer_about_us),
                 context.getString(R.string.nav_drawer_contact_us),
                 context.getString(R.string.nav_drawer_share),
