@@ -86,7 +86,7 @@ body{
 }
 
 .bgimg {
-    background-image: url('background.jpg');
+    background-color:#d3d3d3;
 }
 
 /*.register{
