@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Techfest2k18</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slim.min.js"></script>
+	<script type="text/javascript" src="js/propper.min.js"></script>
+	<script type="text/javascript" src="js/reg.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reg.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+<body>
+	<!-- The Navbar for adding Logo -->
+	<nav>
+		
+	</nav>
+	<!-- The central Box for registration -->
+	<div class="box1">
+		<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+					<br>
+					<h1>Registration Portal</h1>
+				</div>
+			</div>
+			<div class="back">
+					<img src="img/background.jpg">
+				</div>
+			<div class="row">
+				<div class="col-md-1 col-sm-1"></div>
+				<div class="col-md-3 col-sm-3"><label class="arrange1">Main Events :</label></div>
+				<div class="col-md-7 col-sm-7">
+					<form  action="register.php" method="post" data-toggle="validator">
+						<div class="form-group">
+   							<label for="eventselect"></label>
+						    <select class="form-control" id="eventselect">
+						    <option name="event">Select Event</option>
+      						<option name="event">2</option>
+   							<option name="event">3</option>
+      						<option name="event">4</option>
+      						<option name="event">5</option>
+    						</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-1 col-sm-1"></div>
+				<div class="col-md-3 col-sm-3"><label class="arrange2">Sub Events :</label></div>
+				<div class="col-md-7 col-sm-7">
+						<div class="form-group">
+						    <select class="form-control" id="subeventselect">
+						    <option>Select Sub-Event</option>
+      						<option>2</option>
+   							<option>3</option>
+      						<option>4</option>
+      						<option>5</option>
+    						</select>
+						</div>
+					</div>
+				</div>
+						<div class="row">
+							<div class="col-md-1 col-sm-1"></div>
+							<div class="col-md-3 col-sm-3"><label class="arrange3" for="memberselect">Select Member :</label></div>
+							<div class="col-md-7 col-sm-7 form-group">
+							<select class="form-control" id="memberselect">
+						    <option>1</option>
+      						<option>2</option>
+   							<option>3</option>
+      						<option>4</option>
+      						<option>5</option>
+    						</select>
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								
+							</div>
+						</div>
+						<br><br>
+					<div class="row">
+					<div class="col-md-2 col-sm-2"></div>
+					<div class="col-md-8 col-sm-8">	
+						<button value="submit" class="btn btn-dark btn-block">NEXT</button>
+					</div>
+					<div class="col-md-2 col-sm-2"></div>
+					</div>
+					</form>
+	</div>
+</body>
+</html>
