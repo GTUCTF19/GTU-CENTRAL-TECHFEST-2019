@@ -5,6 +5,13 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowAnimationStyle">@style/FadeAnimationTheme</item>
+    </style>
+
+    <style name="FadeAnimationTheme">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
 
     <!--Toolbar Theme-->
@@ -15,6 +22,10 @@
 
     <style name="ToolbarPopupTheme" parent="Theme.AppCompat.Light">
         <item name="android:selectableItemBackground">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
 
     <!--Primary Ripple Theme-->

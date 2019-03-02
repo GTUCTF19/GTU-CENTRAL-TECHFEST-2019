@@ -8,11 +8,11 @@
         android:id="@+id/rv_events"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="12dp"
-        android:paddingStart="12dp"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
         android:paddingRight="0dp"
         android:paddingEnd="0dp"
-        android:paddingTop="10dp"
-        android:clipToPadding="false"/>
+        android:paddingTop="20dp"
+        android:clipToPadding="false" />
 
 </LinearLayout>

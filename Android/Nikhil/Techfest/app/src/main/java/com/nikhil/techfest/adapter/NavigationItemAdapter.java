@@ -1,12 +1,10 @@
 package com.nikhil.techfest.adapter;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,14 +29,14 @@ public class NavigationItemAdapter extends RecyclerView.Adapter<NavigationItemAd
     private List<Object> itemProviderList;
     private LayoutInflater inflater;
 
-    private Toolbar toolbar;
+//    private Toolbar toolbar;
     private DrawerLayout drawerLayout;
 
     public NavigationItemAdapter(Context context, List<Object> itemProviderList, DrawerLayout drawerLayout) {
         this.itemProviderList = itemProviderList;
         this.inflater = LayoutInflater.from(context);
 
-        this.toolbar = ((Activity) context).findViewById(R.id.toolbar);
+//        this.toolbar = ((Activity) context).findViewById(R.id.toolbar);
         this.drawerLayout = drawerLayout;
     }
 
@@ -157,7 +155,7 @@ public class NavigationItemAdapter extends RecyclerView.Adapter<NavigationItemAd
                 v.getContext().startActivity(new Intent(v.getContext(), ScheduleActivity.class));
             }
             Toast.makeText(v.getContext(), current.getTitle(), Toast.LENGTH_SHORT).show();
-            toolbar.setTitle(current.getTitle());
+//            toolbar.setTitle(current.getTitle());
             drawerLayout.closeDrawer(Gravity.START);
         }
     }

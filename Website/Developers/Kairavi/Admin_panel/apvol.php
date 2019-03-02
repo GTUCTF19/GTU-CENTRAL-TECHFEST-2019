@@ -14,7 +14,7 @@
         $id=$_GET['id'];
         //$status=$_GET['action'];
         
-        $uq="update volunteer SET action=1 WHERE id='$id'";
+        $uq="update volunteer SET status=1 WHERE id='$id'";
         mysqli_query($conn,$uq);
         echo '<META HTTP-EQUIV="Refresh" Content="0; URL=/Admin_panel/volunteer_detail.php">';
 	}
