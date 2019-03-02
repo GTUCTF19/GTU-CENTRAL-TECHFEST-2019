@@ -1,15 +1,12 @@
 package com.nikhil.techfest.main;
 
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 
 import com.github.barteksc.pdfviewer.PDFView;
 import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
 import com.github.barteksc.pdfviewer.listener.OnPageChangeListener;
-import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle;
 import com.nikhil.techfest.R;
 import com.shockwave.pdfium.PdfDocument;
 
@@ -63,7 +60,6 @@ public class ScheduleActivity extends AppCompatActivity implements OnPageChangeL
                 .onPageChange(this)
                 .enableAnnotationRendering(true)
                 .onLoad(this)
-                .scrollHandle(new DefaultScrollHandle(this))
                 .load();
     }
 

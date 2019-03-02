@@ -19,7 +19,6 @@ public class EventTypesProvider {
     }
 
     public static ArrayList<String> getItems(Context context) {
-        ArrayList<String> itemList = new ArrayList<>(Arrays.asList(getTypes(context)));
-        return itemList;
+        return new ArrayList<>(Arrays.asList(getTypes(context)));
     }
 }
