@@ -10,10 +10,10 @@
     session_start();
 	
 
-if(isset($_GET['team_id']))
+if(isset($_GET['id']))
 {
-    $id=$_GET['team_id'];
-    $sql="delete from registration where team_id='$id'";
+    $id=$_GET['id'];
+    $sql="delete from registration where id='$id'";
     $query1=mysqli_query($conn,$sql);
     if($query1)
     {

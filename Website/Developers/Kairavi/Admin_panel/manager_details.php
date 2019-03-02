@@ -110,7 +110,12 @@
                             <a href="event_form.php">
                                 <i class="fa fa-sign-out fa-fw"></i>EVENT FORM</a>
                         </li>
-                                            
+                        
+                        <li>
+                            <a href="view_event.php">
+                                <i class="fa fa-sign-out fa-fw"></i>VIEW EVENT</a>
+                        </li>
+                        
                         <li class="active has-sub">
                             <a class="active js-arrow" href="#">
                                 <i class="fas fa-tachometer-alt"></i>MANAGER DETAILS</a>
@@ -215,7 +220,7 @@
         <?php
         
         $cood=$_SESSION['id'];
-        $sql="select * from manager where manager.event='".$cood."'";
+        $sql="select * from manager where manager.department='".$cood."'";
         $disp=mysqli_query($conn,$sql);
 			
 	   while($row=mysqli_fetch_array($disp))
@@ -224,8 +229,8 @@
 				echo "<td><center><font  size='4' >".$row['id']."</font></center></td>";
 				echo "<td><center><font  size='4' >".$row['name']."</font></center></td>";
 				echo "<td><center><font  size='4' >".$row['phone']."</font></center></td>";
-                echo "<td><center><font  size='4' >".$row['event']."</font></center></td>";
-                echo "<td><center><font  size='4' >".$row['action']."</font></center></td>";
+                echo "<td><center><font  size='4' >".$row['department']."</font></center></td>";
+                echo "<td><center><font  size='4' >".$row['status']."</font></center></td>";
                 echo "<td><center><a href='apman.php?id=".$row['id']."'><img src='images/approve.png' height='30' width='30'></a>"; echo "  "; echo" <a href='removeman.php?id=".$row['id']."'><img src='images/cross.png' height='25' width='25'></a></center></td>";
 				echo "</tr>";
 			} ?>

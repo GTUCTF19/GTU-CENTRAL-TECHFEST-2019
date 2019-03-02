@@ -109,7 +109,13 @@
                             <a href="event_form.php">
                                 <i class="fa fa-sign-out fa-fw"></i>EVENT FORM</a>
                         </li>
+                       
+                        <li>
+                            <a href="view_event.php">
+                                <i class="fa fa-sign-out fa-fw"></i>VIEW EVENT</a>
+                        </li>
                         
+
                          <li>
                             <a href="manager_details.php">
                                 <i class="fa fa-sign-out fa-fw"></i>MANAGER DETAILS</a>
@@ -198,15 +204,20 @@
               <div class="container">
               <h1 style="text-align:center">TEAM DETAILS</h1><br>
 		<center><table border="1" height="30" cellpadding='20' cellspacing='20'>
-		<col width="200">
+		<col width="100">
+        <col width="100">
+        <col width="100">
+        <col width="100">
+        <col width="100">
+        <col width="100">
         <col width="100">
         <col width="200">
-        <col width="200">
-        <col width="100">
-        <col width="200">
+            <tr>
 		<th><center><font  size='4' >Volunteer Id</font></center></th>
-        <th><center><font  size='4' >Team Id</font></center></th>
+        <th><center><font  size='4' >Team name</font></center></th>
 		<th><center><font  size='4'>Team Leader Name</font></center></th>
+        <th><center><font  size='4'>College</font></center></th>
+        <th><center><font  size='4'>Event name</font></center></th>
         <th><center><font  size='4'>Contact no.</font></center></th>
         <th><center><font  size='4'>Status</font></center></th>
         <th colspan=2><center><font  size='4'>Action</font></center></th>
@@ -214,17 +225,20 @@
        
         <?php
 	
-        $disp=mysqli_query($conn,"select * from team");
+        $disp=mysqli_query($conn,"select * from registration where team_leader=1");
+        //$disp2=mysqli_query($conn,"select firstName from registration where team_leader=1");
        			
 	   while($row=mysqli_fetch_array($disp))
 			{
 				echo "<tr>";
-				echo "<td><center><font  size='4' >".$row['id']."</font></center></td>";
-                echo "<td><center><font  size='4' >".$row['team_id']."</font></center></td>";
-				echo "<td><center><font  size='4' >".$row['team_leader']."</font></center></td>";
+                echo "<td><center><font  size='4' >".$row['v_id']."</font></center></td>";
+				echo "<td><center><font  size='4' >".$row['team_name']."</font></center></td>";
+                echo "<td><center><font  size='4' >".$row['firstName']."</font></center></td>";
+				echo "<td><center><font  size='4' >".$row['college']."</font></center></td>";
+                echo "<td><center><font  size='4' >".$row['e_id']."</font></center></td>";
                 echo "<td><center><font  size='4' >".$row['phone']."</font></center></td>";
-                echo "<td><center><font  size='4' >".$row['action']."</font></center></td>";
-                echo "<td><center><a href='ap.php?team_id=".$row['team_id']."'><img src='images/approve.png' height='30' width='30'></a>"; echo "  "; echo" <a href='removeregi.php?team_id=".$row['team_id']."'><img src='images/cross.png' height='25' width='25'></a></center></td>";
+                echo "<td><center><font  size='4' >".$row['status']."</font></center></td>";
+                echo "<td><center><a href='ap.php?id=".$row['id']."'><img src='images/approve.png' height='30' width='30'></a>"; echo "  "; echo" <a href='removeregi.php?id=".$row['id']."'><img src='images/cross.png' height='25' width='25'></a></center></td>";
 				echo "</tr>";
 			} ?>
 			

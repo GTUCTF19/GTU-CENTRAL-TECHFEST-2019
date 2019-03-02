@@ -7,14 +7,14 @@
    $error = null;
     session_start();
     
-    if(isset($_GET['team_id']))
+    if(isset($_GET['id']))
 	{
         $query=mysqli_query($conn,"select * from registration ");
         $row=mysqli_fetch_assoc($query);
-        $id=$_GET['team_id'];
+        $id=$_GET['id'];
         //$status=$_GET['action'];
         
-        $uq="update registration SET action=1 WHERE team_id='$id'";
+        $uq="update registration SET status=1 WHERE id='$id'";
         mysqli_query($conn,$uq);
         echo '<META HTTP-EQUIV="Refresh" Content="0; URL=/Admin_panel/team.php">';
 	}
