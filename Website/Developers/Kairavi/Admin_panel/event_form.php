@@ -239,8 +239,14 @@
                         <li class="active has-sub">
                             <a class="active js-arrow" href="#">
                                 <i class="fas fa-tachometer-alt"></i>EVENT FORM</a>
-                            </li>
-
+                        </li>
+                        
+                        
+                         <li>
+                            <a href="view_event.php">
+                                <i class="fa fa-sign-out fa-fw"></i>VIEW EVENT</a>
+                        </li>
+                        
                          <li>
                             <a href="manager_details.php">
                                 <i class="fa fa-sign-out fa-fw"></i>MANAGER DETAILS</a>
@@ -438,7 +444,7 @@
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="vendor/select2/select2.min.js">
     </script>
-
+   
     <!-- Main JS-->
     <script src="js/main.js"></script>
 

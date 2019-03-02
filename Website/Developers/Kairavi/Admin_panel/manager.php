@@ -11,8 +11,9 @@ if(isset($_POST['submit']))
 {
     $name=$_POST['name'];
     $phone=$_POST['phone'];
+    $event=$_POST['event'];
 
-    $ins_query = "insert into manager (name,phone) values ('$name','$phone')";
+    $ins_query = "insert into manager (name,phone,event) values ('$name','$phone','$event')";
     $ins2_query=mysqli_query($conn,$ins_query);	
    
 	if(ins2_query==true)
@@ -118,7 +119,18 @@ if(isset($_POST['submit']))
                                     <label>Phone no: </label>
                                     <input class="form-control" type="no" name="phone" placeholder="Phone No" onkeypress="return isNumberKey(event)" pattern="[7-9]{1}[0-9]{9}">
                                 </div>
-																
+									
+                               <div class="form-group">
+   							<label for="eventselect">SELECT EVENT</label>
+						   <select name="event">
+                        <option value="TECH">Technical</option>
+                        <option value="NONTECH">Non-Technical</option>
+                        <option value="ENSM">Entresum</option>
+                        <option value="WKSP">Workshop</option>
+                        <option value="ATV">ATV</option>
+                        <option value="ROBO">Robotics</option>
+                        </select>
+						</div>
                                 </div>
 				  <input name="submit" class="au-btn au-btn--block btn-primary m-b-20" type="submit" value="REGISTER">
 						</div>

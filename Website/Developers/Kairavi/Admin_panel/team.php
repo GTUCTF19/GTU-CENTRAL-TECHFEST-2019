@@ -214,7 +214,7 @@
        
         <?php
 	
-        $disp=mysqli_query($conn,"select * from registration");
+        $disp=mysqli_query($conn,"select * from team");
        			
 	   while($row=mysqli_fetch_array($disp))
 			{

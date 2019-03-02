@@ -12,6 +12,11 @@
 <html lang="en">
 
 <head>
+    
+        <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.jqueryui.min.css" />
+       
+    
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -96,25 +101,7 @@
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
-                        <li>
-                            <a href="event_form.php">
-                                <i class="fa fa-sign-out fa-fw"></i>EVENT FORM</a>
-                        </li>
-                                            
-                       <li>
-                            <a href="manager_details.php">
-                                <i class="fa fa-sign-out fa-fw"></i>MANAGER DETAILS</a>
-                        </li>
-                        
-                        <li>
-                            <a href="volunteer_detail.php">
-                                <i class="fa fa-sign-out fa-fw"></i>VOLUNTEER DETAILS</a>
-                        </li>
-                        
-                         <li>
-                            <a href="team.php">
-                                <i class="fa fa-sign-out fa-fw"></i>TEAM DETAILS</a>
-                        </li>
+                       
                         
                          <li class="active has-sub">
                             <a class="active js-arrow" href="#">
@@ -193,32 +180,42 @@
             <div class="main-content">
               <div class="container">
               <h3 style="text-align:center">DAILY REPORT</h3><br>
-		<center><table border="1" height="30" cellpadding='20' cellspacing='20'>
+		<center><table border="1" id="example">
 		<col width="200">
         <col width="200">
         <col width="200">
         <col width="200">
         <col width="200">
+        
+        <thead>
+        <tr>
 		<th><center><font  size='4' >Team Id</font></center></th>
-        <th><center><font  size='4'>First name</font></center></th>
-        <th><center><font  size='4'>Last name</font></center></th>
-        <th><center><font  size='4'>Phone no.</font></center></th>
-        <th><center><font  size='4'>College</font></center></th>
+        <th><center><font  size='4'>Team name</font></center></th>
+        <th><center><font  size='4'>Leader name</font></center></th>
+        <th><center><font  size='4'>Date</font></center></th>
+        <th><center><font  size='4'>Time</font></center></th>
         </tr>
-       
+        </thead>
+        
         <?php
-	       $query="SELECT * FROM registration WHERE registration.date > DATE_SUB(NOW(), INTERVAL 1 DAY)";
-        $disp=mysqli_query($conn,$query);
-			
-	   while($row=mysqli_fetch_array($disp))
+            
+            $query="SELECT * FROM team WHERE team.date > DATE_SUB(NOW(), INTERVAL 1 DAY) AND action = 1";
+            $disp=mysqli_query($conn,$query);
+                            
+	       while($row=mysqli_fetch_array($disp))
 			{
-				echo "<tr>";
-				echo "<td><center><font  size='4' >".$row['team_id']."</font></center></td>";
-				echo "<td><center><font  size='4' >".$row['firstName']."</font></center></td>";
-				echo "<td><center><font  size='4' >".$row['lastName']."</font></center></td>";
-                echo "<td><center><font  size='4' >".$row['phone']."</font></center></td>";
-                echo "<td><center><font  size='4' >".$row['college']."</font></center></td>";
+                $new_time = explode(" ",$row['date']);
+                $get_date = $new_time[0];   
+                $get_time = $new_time[1];
+                echo "<tbody>";
+                echo "<tr>";
+				echo "<td><center><font  size='4' >".$row['t_id']."</font></center></td>";
+				echo "<td><center><font  size='4' >".$row['t_nm']."</font></center></td>";
+				echo "<td><center><font  size='4' >".$row['t_l']."</font></center></td>";
+                echo "<td><center><font  size='4' >".$get_date."</font></center></td>";
+                echo "<td><center><font  size='4' >".$get_time."</font></center></td>";
                 echo "</tr>";
+                echo "</tbody>";
 			} ?>
 			
             </table>
@@ -254,6 +251,16 @@
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
+            
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        
+        <script type="text/javascript">
+        $(document).ready(function() {
+        $('#example').DataTable();
+        } );
+        </script>
 
 </body>
 
