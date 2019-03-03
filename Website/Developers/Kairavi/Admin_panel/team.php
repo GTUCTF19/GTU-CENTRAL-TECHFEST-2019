@@ -225,6 +225,7 @@
        
         <?php
 	
+        $disp=mysqli_query($conn,"select * from team");
         $disp=mysqli_query($conn,"select * from registration where team_leader=1");
         //$disp2=mysqli_query($conn,"select firstName from registration where team_leader=1");
        			

@@ -221,6 +221,7 @@
         <?php
         
         $cood=$_SESSION['id'];
+        $sql="select * from manager where manager.event='".$cood."'";
         $sql="select * from manager where manager.department='".$cood."'";
         $disp=mysqli_query($conn,$sql);
 			
@@ -230,6 +231,8 @@
 				echo "<td><center><font  size='4' >".$row['m_id']."</font></center></td>";
 				echo "<td><center><font  size='4' >".$row['name']."</font></center></td>";
 				echo "<td><center><font  size='4' >".$row['phone']."</font></center></td>";
+                echo "<td><center><font  size='4' >".$row['event']."</font></center></td>";
+                echo "<td><center><font  size='4' >".$row['action']."</font></center></td>";
                 echo "<td><center><font  size='4' >".$row['department']."</font></center></td>";
                 echo "<td><center><font  size='4' >".$row['status']."</font></center></td>";
                 echo "<td><center><a href='apman.php?m_id=".$row['m_id']."'><img src='images/approve.png' height='30' width='30'></a>"; echo "  "; echo" <a href='removeman.php?m_id=".$row['m_id']."'><img src='images/cross.png' height='25' width='25'></a></center></td>";

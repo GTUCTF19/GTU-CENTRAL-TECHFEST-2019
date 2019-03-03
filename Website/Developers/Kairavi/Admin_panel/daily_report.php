@@ -199,6 +199,7 @@
         
         <?php
             
+            $query="SELECT * FROM team WHERE team.date > DATE_SUB(NOW(), INTERVAL 1 DAY) AND action = 1";
             $query="SELECT * FROM registration WHERE registration.date > DATE_SUB(NOW(), INTERVAL 1 DAY) AND status = 1";
             $disp=mysqli_query($conn,$query);
                             
