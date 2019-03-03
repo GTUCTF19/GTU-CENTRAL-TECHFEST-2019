@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/event.css">
+</head>
+
+<body bgcolor="#E6E6FA" data-spy="scroll" data-target=".navbar" data-offset="50" >
+  <title>Workshops</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+
+	<!-- Compulsary Basic Images like header , logo and symbol-->
+	<div class="Header" style="width: 102%;position: fixed;top:-4%;left:-1%;right:-1%;background:url('Design (5).svg');height:11vw;background-repeat: no-repeat;background-size: cover;z-index: 2;">
+	</div>
+
+	<!-- gtu -->
+	<img id="gtulogo" src="img/gtu.png">
+
+	<!-- vgec -->
+	<img id="vgeclogo" src="img/vgec.png">
+
+	
+	<!-- TECHFEST LOGO -->
+	<img id="weblogo" src="img/web logo part 2.png">
+
+<div class="container">
+  <div class="media">
+    <div class="media-left media-top">
+      <img id="eventimage" src="img/vgeclogo.jpg" class="media-object">
+    </div>
+    <div class="media-body">
+     
+<!-- Headings about the events -->
+		   <div class="tab">
+		  	<button class="tablinks active" onclick="openCity(event, 'Event')">Event</button>
+		  	<button class="tablinks" onclick="openCity(event, 'Description')">Description</button>
+		  	<button class="tablinks" onclick="openCity(event, 'Rules')">Rules</button>
+		  	<button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+		  	<button class="tablinks" onclick="openCity(event, 'Registration')">Registration</button>
+		   </div>
+		<div id="Event" class="tabcontent">
+		  <h3>Event</h3>
+		  <p>London is the capital city of England.</p>
+		</div>
+
+		<div id="Description" class="tabcontent">
+		  <h3>Description</h3>
+		  <p>Paris is the capital of France.</p> 
+		</div>
+		<div id="Rules" class="tabcontent">
+		  <h3>Rules</h3>
+		  <p>blabla</p>
+		</div>
+		<div id="Contact" class="tabcontent">
+		  <h3>Contact</h3>
+		  <p>bla bla bla</p>
+		</div>
+		<div id="Registration" class="tabcontent">
+		  <h3>Register Here</h3>
+		  
+		  <p>bla bla bla</p><br>
+		  <button class="register"><span>Register</span></button>
+	</div>
+     
+    </div>
+  </div>
+</div>
+ <div class="footer">
+		<div class="mr-auto" style="width: 102%;position: fixed;bottom:0;left:-1%;background:url('footer_black1.2.svg');height:9%;background-repeat: no-repeat;background-size: cover;z-index: 3;">
+			<p class="copyright" style=""> &copy Vishwakarma Government Enginerring College</p>
+			<p id="hostname"> Hosting Partner : LMCP</p>
+			<img id="hostlogo" src="img/LMCP-Logo.png">
+			<button id="ourteam" class="btn-dark"> OUR TEAM</button>
+		</div>
+	</div>
+
+
+
+<script type="text/javascript" src="js/event.js"></script>
+</body>
+</html>
