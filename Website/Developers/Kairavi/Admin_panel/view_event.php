@@ -222,20 +222,18 @@
         <?php
         
         $cood=$_SESSION['id'];
-        $sql="select * from manager where manager.event='".$cood."'";
+        $sql="select * from manager where manager.department='".$cood."'";
         $disp=mysqli_query($conn,$sql);
-			
+		
 	   while($row=mysqli_fetch_array($disp))
 			{
                // $id=$row['id'];
 				echo "<tr>";
 				echo "<td><center><font  size='4' >".$row['name']."</font></center></td>";
 				echo "<td><center><font  size='4' >".$row['phone']."</font></center></td>";
-                echo "<td><center><font  size='4' >".$row['action']."</font></center></td>";
-                echo '<td><center><button type="button" class="btn btn-primary" id="'.$row['id'].'">
-                <img src="images/view.png" width="20" height="20" />
-                </button></center></td>';
-                echo "<td><center><a href='apman.php?id=".$row['id']."'><img src='images/approve.png' height='30' width='30'></a>"; echo "  "; echo" <a href='removeman.php?id=".$row['id']."'><img src='images/cross.png' height='25' width='25'></a></center></td>";
+                echo "<td><center><font  size='4' >".$row['status']."</font></center></td>";
+                echo '<td><center><a href="#"><img src="images/view.png" width="20" height="20" /></a></center></td>';
+                echo "<td><center><a href='apeve.php?e_id=".$row['e_id']."'><img src='images/approve.png' height='30' width='30'></a>"; echo "  "; echo" <a href='removeeve.php?e_id=".$row['e_id']."'><img src='images/cross.png' height='25' width='25'></a></center></td>";
 				echo "</tr>";
 			}        
             

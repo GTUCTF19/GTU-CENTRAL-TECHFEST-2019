@@ -209,6 +209,7 @@
         <col width="200">
         <col width="200">
         <col width="200">
+        <tr>
 		<th><center><font  size='4' >Manager Id</font></center></th>
 		<th><center><font  size='4'>Manager Name</font></center></th>
 		<th><center><font  size='4'>Phone no.</font></center></th>
@@ -226,12 +227,12 @@
 	   while($row=mysqli_fetch_array($disp))
 			{
 				echo "<tr>";
-				echo "<td><center><font  size='4' >".$row['id']."</font></center></td>";
+				echo "<td><center><font  size='4' >".$row['m_id']."</font></center></td>";
 				echo "<td><center><font  size='4' >".$row['name']."</font></center></td>";
 				echo "<td><center><font  size='4' >".$row['phone']."</font></center></td>";
                 echo "<td><center><font  size='4' >".$row['department']."</font></center></td>";
                 echo "<td><center><font  size='4' >".$row['status']."</font></center></td>";
-                echo "<td><center><a href='apman.php?id=".$row['id']."'><img src='images/approve.png' height='30' width='30'></a>"; echo "  "; echo" <a href='removeman.php?id=".$row['id']."'><img src='images/cross.png' height='25' width='25'></a></center></td>";
+                echo "<td><center><a href='apman.php?m_id=".$row['m_id']."'><img src='images/approve.png' height='30' width='30'></a>"; echo "  "; echo" <a href='removeman.php?m_id=".$row['m_id']."'><img src='images/cross.png' height='25' width='25'></a></center></td>";
 				echo "</tr>";
 			} ?>
 			

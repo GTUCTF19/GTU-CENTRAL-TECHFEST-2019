@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 02, 2019 at 10:13 AM
+-- Generation Time: Mar 03, 2019 at 06:41 PM
 -- Server version: 5.5.8
 -- PHP Version: 5.3.5
 
@@ -53,7 +53,7 @@ INSERT INTO `admin_pannel` (`u_name`, `u_id`, `u_pass`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `atv` (
-  `e_id` varchar(5) NOT NULL,
+  `e_id` int(3) NOT NULL,
   `e_name` varchar(40) NOT NULL,
   `abstract` varchar(20) NOT NULL,
   `rules` varchar(58) NOT NULL,
@@ -61,7 +61,9 @@ CREATE TABLE IF NOT EXISTS `atv` (
   `min_members` int(2) NOT NULL,
   `max_members` int(2) NOT NULL,
   `scope` int(5) NOT NULL,
-  PRIMARY KEY (`e_id`)
+  `m_id` int(3) NOT NULL,
+  PRIMARY KEY (`e_id`),
+  KEY `m_id` (`m_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -131,7 +133,12 @@ CREATE TABLE IF NOT EXISTS `entresum` (
   `min_members` int(2) NOT NULL,
   `max_members` int(2) NOT NULL,
   `scope` int(5) NOT NULL,
-  PRIMARY KEY (`e_id`)
+  `m_id` int(3) NOT NULL,
+  PRIMARY KEY (`e_id`),
+  UNIQUE KEY `m_id_2` (`m_id`),
+  UNIQUE KEY `m_id_3` (`m_id`),
+  KEY `m_id` (`m_id`),
+  KEY `m_id_4` (`m_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -146,22 +153,20 @@ CREATE TABLE IF NOT EXISTS `entresum` (
 --
 
 CREATE TABLE IF NOT EXISTS `manager` (
+  `m_id` int(3) NOT NULL AUTO_INCREMENT,
   `department` varchar(50) NOT NULL,
-  `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `phone` bigint(10) NOT NULL,
   `status` int(1) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+  PRIMARY KEY (`m_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `manager`
 --
 
-INSERT INTO `manager` (`department`, `id`, `name`, `phone`, `status`) VALUES
-('', 15, 'kairavi', 8866882346, 1),
-('', 16, 'shah', 8866882458, 0),
-('NONTECH', 19, 'kairavi', 7802019696, 1);
+INSERT INTO `manager` (`m_id`, `department`, `name`, `phone`, `status`) VALUES
+(1, 'ATV', 'cghg', 7802016969, 1);
 
 -- --------------------------------------------------------
 
@@ -178,15 +183,15 @@ CREATE TABLE IF NOT EXISTS `non_tech` (
   `min_members` int(2) NOT NULL,
   `max_members` int(2) NOT NULL,
   `scope` int(5) NOT NULL,
-  PRIMARY KEY (`e_id`)
+  `m_id` int(3) NOT NULL,
+  PRIMARY KEY (`e_id`),
+  KEY `m_id` (`m_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `non_tech`
 --
 
-INSERT INTO `non_tech` (`e_id`, `e_name`, `abstract`, `rules`, `fees`, `min_members`, `max_members`, `scope`) VALUES
-('nt1', 'aaa', 'dtdt', 'vyfyfouu', 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -238,8 +243,9 @@ CREATE TABLE IF NOT EXISTS `robotics` (
   `min_members` int(2) NOT NULL,
   `max_members` int(2) NOT NULL,
   `scope` int(5) NOT NULL,
-  `date` datetime NOT NULL,
-  PRIMARY KEY (`e_id`)
+  `m_id` int(3) NOT NULL,
+  PRIMARY KEY (`e_id`),
+  KEY `m_id` (`m_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -263,7 +269,8 @@ CREATE TABLE IF NOT EXISTS `tech` (
   `max_members` int(2) NOT NULL,
   `scope` int(5) NOT NULL,
   `m_id` int(3) NOT NULL,
-  PRIMARY KEY (`e_id`)
+  PRIMARY KEY (`e_id`),
+  KEY `m_id` (`m_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -293,25 +300,36 @@ CREATE TABLE IF NOT EXISTS `volunteer` (
 INSERT INTO `volunteer` (`id`, `name`, `phone`, `status`, `email`) VALUES
 (25, 'kairavi', 8887975454, 1, '');
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `workshop`
+-- Constraints for dumped tables
 --
 
-CREATE TABLE IF NOT EXISTS `workshop` (
-  `e_id` varchar(5) NOT NULL,
-  `e_name` varchar(40) NOT NULL,
-  `abstract` varchar(20) NOT NULL,
-  `rules` varchar(58) NOT NULL,
-  `fees` int(5) NOT NULL,
-  `min_members` int(2) NOT NULL,
-  `max_members` int(2) NOT NULL,
-  `scope` int(5) NOT NULL,
-  PRIMARY KEY (`e_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+--
+-- Constraints for table `atv`
+--
+ALTER TABLE `atv`
+  ADD CONSTRAINT `atv_ibfk_1` FOREIGN KEY (`m_id`) REFERENCES `manager` (`m_id`);
 
 --
--- Dumping data for table `workshop`
+-- Constraints for table `entresum`
 --
+ALTER TABLE `entresum`
+  ADD CONSTRAINT `entresum_ibfk_1` FOREIGN KEY (`m_id`) REFERENCES `manager` (`m_id`);
 
+--
+-- Constraints for table `non_tech`
+--
+ALTER TABLE `non_tech`
+  ADD CONSTRAINT `non_tech_ibfk_1` FOREIGN KEY (`m_id`) REFERENCES `manager` (`m_id`);
+
+--
+-- Constraints for table `robotics`
+--
+ALTER TABLE `robotics`
+  ADD CONSTRAINT `robotics_ibfk_1` FOREIGN KEY (`m_id`) REFERENCES `manager` (`m_id`);
+
+--
+-- Constraints for table `tech`
+--
+ALTER TABLE `tech`
+  ADD CONSTRAINT `tech_ibfk_1` FOREIGN KEY (`m_id`) REFERENCES `manager` (`m_id`);
