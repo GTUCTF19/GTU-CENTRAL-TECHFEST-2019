@@ -214,6 +214,7 @@
         <col width="200">
         <th><center><font  size='4'>Manager Name</font></center></th>
 		<th><center><font  size='4'>Phone no.</font></center></th>
+        <th><center><font  size='4'>Event name</font></center></th>
         <th><center><font  size='4'>Status</font></center></th>
         <th><center><font  size='4'>View</font></center></th>
         <th colspan=2><center><font  size='4'>Action</font></center></th>
@@ -231,6 +232,7 @@
 				echo "<tr>";
 				echo "<td><center><font  size='4' >".$row['name']."</font></center></td>";
 				echo "<td><center><font  size='4' >".$row['phone']."</font></center></td>";
+                 echo "<td><center><font  size='4' >".$eventname."</font></center></td>";
                 echo "<td><center><font  size='4' >".$row['status']."</font></center></td>";
                 echo '<td><center><a href="#"><img src="images/view.png" width="20" height="20" /></a></center></td>';
                 echo "<td><center><a href='apeve.php?e_id=".$row['e_id']."'><img src='images/approve.png' height='30' width='30'></a>"; echo "  "; echo" <a href='removeeve.php?e_id=".$row['e_id']."'><img src='images/cross.png' height='25' width='25'></a></center></td>";
