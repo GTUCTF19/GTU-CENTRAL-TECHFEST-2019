@@ -111,6 +111,11 @@
                         </li>
                         
                         <li>
+                            <a href="view_event.php">
+                                <i class="fa fa-sign-out fa-fw"></i>VIEW EVENT</a>
+                        </li>
+                        
+                        <li>
                             <a href="manager_details.php">
                                 <i class="fa fa-sign-out fa-fw"></i>MANAGER DETAILS</a>
                         </li>
@@ -220,7 +225,7 @@
 				echo "<td><center><font  size='4' >".$row['id']."</font></center></td>";
 				echo "<td><center><font  size='4' >".$row['name']."</font></center></td>";
 				echo "<td><center><font  size='4' >".$row['phone']."</font></center></td>";
-                echo "<td><center><font  size='4' >".$row['action']."</font></center></td>";
+                echo "<td><center><font  size='4' >".$row['status']."</font></center></td>";
                 echo "<td><center><a href='apvol.php?id=".$row['id']."'><img src='images/approve.png' height='30' width='30'></a>"; echo "  "; echo" <a href='removevol.php?id=".$row['id']."'><img src='images/cross.png' height='25' width='25'></a></center></td>";
 				echo "</tr>";
 			} ?>

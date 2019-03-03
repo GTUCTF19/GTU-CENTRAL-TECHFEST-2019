@@ -1,54 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:id="@+id/ri_cv_event"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_marginRight="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="20dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="5dp">
+    <!--app:cardBackgroundColor="@color/white"-->
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/ri_cv_event"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_margin="10dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?attr/selectableItemBackground"
-        app:cardBackgroundColor="@color/white"
-        app:cardElevation="5dp"
-        app:cardCornerRadius="4dp">
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="135dp"-->
+    <!--android:layout_height="135dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:clickable="false"-->
+    <!--android:focusable="false"-->
+    <!--app:cardBackgroundColor="@color/white"-->
+    <!--app:cardCornerRadius="4dp">-->
 
-    <android.support.v7.widget.CardView
-        android:layout_width="135dp"
-        android:layout_height="135dp"
-        android:layout_gravity="center"
-        android:clickable="false"
-        android:focusable="false"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="4dp">
-
-        <ImageView
-            android:id="@+id/ri_iv_event_image"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@mipmap/ic_launcher"
-            android:scaleType="centerCrop"
-            tools:ignore="ContentDescription" />
-
-    </android.support.v7.widget.CardView>
-
-    </android.support.v7.widget.CardView>
-
-    <TextView
-        android:id="@+id/ri_tv_event_name"
+    <ImageView
+        android:id="@+id/ri_iv_event_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/nav_item_title"
-        android:textSize="17sp"
-        android:textColor="@color/black"
-        android:maxLines="2"
-        android:ellipsize="end"/>
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/ri_tv_event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom"
+            android:text="@string/nav_item_title"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+</android.support.v7.widget.CardView>
+
+    <!--</android.support.v7.widget.CardView>-->

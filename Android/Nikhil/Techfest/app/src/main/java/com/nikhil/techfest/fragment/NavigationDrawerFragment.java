@@ -1,7 +1,5 @@
 package com.nikhil.techfest.fragment;
 
-import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;

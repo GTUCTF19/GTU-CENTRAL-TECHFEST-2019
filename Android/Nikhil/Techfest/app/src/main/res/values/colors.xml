@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--App Colors-->
-    <color name="colorPrimary">#673AB7</color>
-    <color name="colorPrimaryDark">#512DA8</color>
+    <color name="colorPrimary">#313131</color>
+    <color name="colorPrimaryDark">#212121</color>
     <color name="colorAccent">#FF5722</color>
 
+    <!--Light Colors-->
+    <color name="lightPrimary">#414141</color>
+
     <!--Ripple Colors-->
-    <color name="primaryRipple">#33673AB7</color>
+    <color name="primaryRipple">#33313131</color>
     <color name="accentRipple">#33FF5722</color>
     <color name="whiteRipple">#33FFFFFF</color>
     <color name="blackRipple">#33000000</color>
-
-    <!--Dark Colors-->
-    <color name="whiteDark">#FFFFFF</color>
 
     <!--Primary Colors-->
     <color name="white">#FFFFFF</color>
