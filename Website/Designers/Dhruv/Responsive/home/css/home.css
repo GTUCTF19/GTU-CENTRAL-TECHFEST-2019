@@ -1,0 +1,141 @@
+#homepage {
+  top: 0;
+  left: 0;
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: #000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+ 
+}
+#overview{
+  height: 100%;
+  display: table;
+  text-align: justify;
+  background: #efefef;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+.title-widget {
+  color: #000;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 25px;
+  margin-left: 0;
+  padding-left: 28px;
+}
+
+.title-widget::before {
+    background-color: #000;
+    content: "";
+    height: 22px;
+    left: 0px;
+    position: absolute;
+    top: -2px;
+    width: 5px;
+}
+
+
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#homepage .inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /*whatever width you want*/
+}
+#overview .inner {
+  margin-top:5%;
+  padding: 1%;
+  text-align: justify-all;
+  box-shadow: inset 0 0 10px #000;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  color: #000;
+  /*whatever width you want*/
+}
+/*scroll*/
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  bottom:18%;
+  right:2%;
+  z-index: 2;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}

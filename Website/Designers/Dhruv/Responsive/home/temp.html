@@ -1,0 +1,118 @@
+$(document).ready(function() {
+  
+  var animating = false,
+      submitPhase1 = 1100,
+      submitPhase2 = 800,
+      logoutPhase1 = 800;
+  
+  function ripple(elem, e) {
+    $(".ripple").remove();
+    var elTop = elem.offset().top,
+        elLeft = elem.offset().left,
+        x = e.pageX - elLeft,
+        y = e.pageY - elTop;
+    var $ripple = $("<div class='ripple'></div>");
+    $ripple.css({top: y, left: x});
+    elem.append($ripple);
+  };
+  
+$(document).on("click", ".login__submit", function(e) {
+    
+    e.preventDefault();
+    if (animating) return;
+    animating = true;
+    var that = this;
+    ripple($(that), e);
+    $(that).addClass("processing");
+    
+    var firstName = document.getElementById('firstName').value;
+    var middleName = document.getElementById('middleName').value;
+    var lastName = document.getElementById('lastName').value;
+    var dob = document.getElementById('dob').value;
+    var mobileNo = document.getElementById('mobileNo').value;
+    var emailID = document.getElementById('emailID').value;
+    
+    var fdept = document.getElementById('fdept').value;
+    
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirmPassword').value;
+    
+    var atposition=emailID.indexOf("@");  
+    var dotposition=emailID.lastIndexOf(".");  
+    
+    
+    if(firstName == null || firstName == ""){
+        setTimeout(function() {
+            document.getElementById('labelId').innerHTML = 'Respected Faculty ! Please enter your first name :)';
+            animating = false;
+            $(that).removeClass("processing");
+        }, submitPhase2);
+    }else if(middleName == null || middleName == ""){
+        setTimeout(function() {
+            document.getElementById('labelId').innerHTML = 'Respected Faculty ! Please enter your middle name :)';
+            animating = false;
+            $(that).removeClass("processing");
+        }, submitPhase2);
+    }else if(fdept == null || fdept == ""){
+        setTimeout(function() {
+            document.getElementById('labelId').innerHTML = 'Respected Faculty ! Please enter your department :)';
+            animating = false;
+            $(that).removeClass("processing");
+        }, submitPhase2);
+    }else if(lastName == null || lastName == ""){
+        setTimeout(function() {
+            document.getElementById('labelId').innerHTML = 'Respected Faculty ! Please enter your surname :)';
+            animating = false;
+            $(that).removeClass("processing");
+        }, submitPhase2);
+    }else if(dob == null || dob == ""){
+        setTimeout(function() {
+            document.getElementById('labelId').innerHTML = 'Respected Faculty ! Please enter your date of birth :)';
+            animating = false;
+            $(that).removeClass("processing");
+        }, submitPhase2);
+    }else if(mobileNo == null || mobileNo == ""){
+        setTimeout(function() {
+            document.getElementById('labelId').innerHTML = 'Respected Faculty ! Please enter your mobile number :)';
+            animating = false;
+            $(that).removeClass("processing");
+        }, submitPhase2);
+    }else if(emailID == null || emailID == ""){
+        setTimeout(function() {
+            document.getElementById('labelId').innerHTML = 'Respected Faculty ! Please enter your email id :)';
+            animating = false;
+            $(that).removeClass("processing");
+        }, submitPhase2);
+    }else if(mobileNo.length != 10){
+        setTimeout(function() {
+            document.getElementById('labelId').innerHTML = 'Respected Faculty ! Please enter valid mobile number :)';
+            animating = false;
+            $(that).removeClass("processing");
+        }, submitPhase2);
+    }else if(atposition<1 || dotposition<atposition+2 || dotposition+2>=emailID.length){
+        setTimeout(function() {
+            document.getElementById('labelId').innerHTML = 'Respected Faculty ! Please enter valid email :)';
+            animating = false;
+            $(that).removeClass("processing");
+        }, submitPhase2);
+    }else if(password == null || password == ""){
+        setTimeout(function() {
+            document.getElementById('labelId').innerHTML = 'Respected Faculty ! Please enter your password :)';
+            animating = false;
+            $(that).removeClass("processing");
+        }, submitPhase2);
+    }else if(confirmPassword != password){
+        setTimeout(function() {
+            document.getElementById('labelId').innerHTML = 'Respected Faculty ! Your password not matched :)';
+            animating = false;
+            $(that).removeClass("processing");
+        }, submitPhase2);
+    }else{
+        setTimeout(function() {
+            $("#registrationForm").submit();
+        }, submitPhase2);
+   
+    }
+});
+
+});

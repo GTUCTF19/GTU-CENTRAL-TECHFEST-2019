@@ -82,67 +82,15 @@ span {
 }
 
 body{
-   font-family: sans-serif;
+   font-family: Georgia, serif;
 }
 
 .bgimg {
+  width:100% ;height:20%;
     background-color:#d3d3d3;
 }
 
-/*.register{
-  background-size: cover;
-	display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-     -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-    height: 100vh;
-    margin: auto;
-    text-align: center;
-    min
-}*/
-/*.ikona {
-  position: relative;
-  top: -32px;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin: -38px auto;
-  background-color: #44ed90;
-  text-align: center;
-  border-top:10px solid transparent;
-  border-bottom:10px solid white;
-  border-left:10px solid transparent;
-  border-right:10px solid transparent;
-}*/
-/*.well{
-  background: white;*/ /* Old browsers */
 
-/*border: 1px groove green!important;
-border-radius:10px!important;
-}*/
-/*input[type="text"],input[type="email"] {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #000000;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-radius: 0;
-}*/
-/*.big{
-	width: 100px;
-}
-.fa { font-size:4em !important;}
-
-.help-block {
-	color: #fb0000;
-}
-.help-block.with-errors {
-	color: #dc423f;
-*/
 .note
 {
     text-align: center;
